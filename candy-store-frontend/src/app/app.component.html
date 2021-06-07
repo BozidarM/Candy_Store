@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <div>
+      <a routerLink="/">Candy Store</a>
+  </div>
+
+  <div fxFlex fxLayoutAlign="end" fxLayoutGap="25px">
+      <a routerLink="/products">Products</a>
+      <a routerLink="/cart">Cart</a>
+      <a routerLink="/users">Profile</a>
+      <a routerLink="/signup">SignUp</a>
+      <a routerLink="/login">LogIn</a>
+      <!-- <a *ngIf="!isloged" routerLink="/signup">SignUp</a> -->
+      <!-- <a *ngIf="!isloged" routerLink="/login">LogIn</a> -->
+      <!-- <a *ngIf="isloged" routerLink="/login">LogOut</a> -->
+  </div>
+
+</mat-toolbar>
+<router-outlet></router-outlet>
