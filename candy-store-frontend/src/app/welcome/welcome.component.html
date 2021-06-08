@@ -1,1 +1,33 @@
-<p>welcome works!</p>
+<div fxFlex fxLayout="column" id="main">
+    <img src="../../assets/wlecome-img.jpg" alt="Wlecome-Photo" id="welcome-img"> 
+    <div fxFlex id="welcome-title" fxLayoutAlign="center center" fxLayout="column">
+        <h1>Welcome to Candy Store</h1>
+        <a mat-raised-button routerLink="/products" id="browse-link">Browse Our Products</a>
+    </div>
+    <div fxFlex id="icons-div" fxLayoutAlign="center center">
+        <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+            <mat-icon class="material-icons-outlined" fxLayoutAlign="center center">
+                cake
+            </mat-icon>
+            <p id="icon-text">Sweetiest Candies</p>
+        </div>
+        <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+            <mat-icon class="material-icons-outlined" fxLayoutAlign="center center">
+                spa
+            </mat-icon>
+            <p id="icon-text">Gluten Free</p>
+        </div>
+        <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+            <mat-icon class="material-icons-outlined" fxLayoutAlign="center center">
+                local_shipping
+            </mat-icon>
+            <p id="icon-text">Fast Shipping</p>
+        </div>
+        <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+            <mat-icon class="material-icons-outlined" fxLayoutAlign="center center">
+                place
+            </mat-icon>
+            <p id="icon-text">Made in Serbia</p>
+        </div>
+    </div>
+</div>
