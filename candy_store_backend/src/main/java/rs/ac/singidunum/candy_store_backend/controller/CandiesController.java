@@ -22,9 +22,9 @@ public class CandiesController {
         return candiesService.findAll();
     }
 
-    @GetMapping("product/{id}")
+    @GetMapping("candy/{id}")
     @CrossOrigin(origins = "*")
-    public Candies findAccessoriesById(@PathVariable("id") String id){
+    public Candies findCandiesById(@PathVariable("id") String id){
         return this.candiesService.findCandiesById(id);
     }
 
@@ -34,19 +34,19 @@ public class CandiesController {
         return  candiesService.findAllByName(name);
     }
 
-    @GetMapping("search/{category}")
+    @GetMapping("searchCategory/{category}")
     @CrossOrigin(origins = "*")
     public List<Candies> findAllByCategory(@PathVariable("category") String category){
         return  candiesService.findAllByCategory(category);
     }
 
-    @GetMapping("search/{date}")
+    @GetMapping("searchDate/{date}")
     @CrossOrigin(origins = "*")
     public List<Candies> findAllByDate(@PathVariable("date") LocalDate date){
         return  candiesService.findAllByDate(date);
     }
 
-    @GetMapping("search/{rating}")
+    @GetMapping("searchRating/{rating}")
     @CrossOrigin(origins = "*")
     public List<Candies> findAllByCategory(@PathVariable("rating") int rating){
         return  candiesService.findAllByRating(rating);

@@ -1,1 +1,98 @@
-<p>product-details works!</p>
+<div fxFlex fxLayout="column">
+
+    <div fxFlex fxLayoutAlign="space-around center" id="cart-div">
+        <!-- <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="30px"> -->
+            <mat-icon class="material-icons-outlined message smiley" fxLayoutAlign="center center">
+                sentiment_dissatisfied
+            </mat-icon>
+
+            <h2 class="message"> + </h2>
+            <h2 class="message">Candy Store</h2>
+            <h2 class="message"> = </h2>
+
+            <mat-icon id="happyIcon" class="material-icons-outlined message smiley" fxLayoutAlign="center center">
+                sentiment_very_satisfied
+            </mat-icon>
+        <!-- </div> -->
+        
+        <mat-icon id="cartIcon" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
+            shopping_cart
+        </mat-icon>
+    </div>
+
+<div fxFlex fxLayoutAlign="center center" fxLayout="column">
+    <div fxFlex fxLayout="row wrap" fxLayoutAlign="center" class="product-wrapper">
+        <div fxFlex fxLayoutAlign="center center" fxLayout="column" id="img-stars">
+            <h1>{{data.name}}</h1>
+
+            <img src="{{data.image}}" alt="Photo" widht="400px" height="600px">
+
+            <ngb-rating [(rate)]="currentRate" max="5"></ngb-rating>
+
+            <!-- <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <p class="titles">Description: </p>
+                <p id="desc">{{data.description}}</p>
+            </div> -->
+        </div>
+        <div fxFlex fxLayout="column" fxLayoutAlign="center center" id="details">
+            <!-- <h1>{{data.name}}</h1> -->
+            <div fxFlex fxLayout="column" fxLayoutAlign="center center" id="price-box" fxLayoutGap="20px">
+                <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+                    <h2 style="color: #d3325b;">Price:</h2> <h2 style="color: #c8c10d;">{{data.price}} Euro</h2>
+                </div>
+                <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px"
+                #f="ngForm" (ngSubmit)="onSubmit(f)">
+                    <mat-form-field  color="accent">
+                        <input type="number" ngModel matInput placeholder="Quantity" name="qunatity" max="{{data.quantity}}" min="1"
+                        required #quantityInput="ngModel">
+                        <mat-error *ngIf="quantityInput.hasError('required')">Please Select Quantity First</mat-error>
+                        <mat-error *ngIf="quantityInput.value <= 0">You can add minimum 1 item in cart!</mat-error>
+                    </mat-form-field>
+
+                    <button type="submit" mat-raised-button color="accent" [disabled]="f.invalid">Add to cart</button>
+                </form>
+            </div>
+            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <p class="titles">Quantity: </p>
+                <p>{{data.quantity}}</p>
+            </div>
+            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <p class="titles">Category: </p>
+                <p>{{data.category}} </p>
+            </div>
+            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <p class="titles">In Stock: </p>
+                <p>{{data.isActive}}</p>
+            </div>
+            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <p class="titles">Made in: </p>
+                <p>{{data.madeIn}}</p>
+            </div>
+            <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <p class="titles">Posted at: </p>
+                <p>{{data.dateCreated}}</p>
+            </div>
+            <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <p class="titles">Description: </p>
+                <p id="desc">{{data.description}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="comments-wrapper">
+         <p>komentraisjao;dnfskfnkdslf;dkf;sndfksndplfindsklfnsdkf;lsdnf</p>
+    </div>
+</div>
+</div>
+
+<!-- id?: string;
+name: string;
+category: string;
+price: any;
+description: string;
+image: string;
+stars: any;
+rating: number;
+dateCreated: any;
+isActive: string;
+madeIn: string;
+quantity: number; -->

@@ -1,1 +1,45 @@
-<p>products works!</p>
+<div fxFlex fxLayout="column">
+    <div fxFlex fxLayoutAlign="space-around center" id="search-cart-div">
+      
+        <mat-form-field color='accent'>
+            <input type="text" ngModel matInput placeholder="Search" name="search"
+            search #searchInput="ngModel" (keyup) = "search(searchInput)">
+        </mat-form-field>
+
+        <mat-icon id="cartIcon" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
+            shopping_cart
+        </mat-icon>
+    </div>
+
+    <div fxFlex fxLayout="row">
+        <div class="sideFilter">
+            <p>...</p>
+            <p>..</p>
+            <p>...</p>
+            <p>...</p>
+            <p>...</p>
+            <p>...</p>
+            <p>...</p>
+        </div>
+
+        <div class="main" fxFlex fxLayout="column" fxLayoutAlign="center center">
+            <section fxFlex fxLayout="row wrap" fxLayoutAlign="center" id="main_section">
+                <mat-card fxFlex="500px" *ngFor="let candy of data">
+                    <img mat-card-image src="{{candy.image}}" alt="Photo" width="200px" height="400px">
+
+                    <mat-card-title fxLayoutAlign="center">
+                        {{candy.name}}
+                    </mat-card-title>
+
+                    <mat-card-content fxLayoutAlign="center">
+                    <h3>Price: {{candy.price}} Euro</h3>
+                    </mat-card-content>
+
+                    <mat-card-actions fxLayoutAlign="center">
+                        <button mat-raised-button color="accent" (click)="showOneCandy(candy.id)">Details</button>
+                    </mat-card-actions>
+                </mat-card>
+            </section>
+        </div>
+    </div>
+</div>

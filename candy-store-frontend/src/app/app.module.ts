@@ -18,6 +18,7 @@ import { ProfileComponent } from './users/profile/profile.component';
 import { OrdersComponent } from './users/orders/orders.component';
 import { OrdersHistoryComponent } from './users/orders-history/orders-history.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

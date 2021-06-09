@@ -6,6 +6,7 @@ import rs.ac.singidunum.candy_store_backend.entity.Users;
 import rs.ac.singidunum.candy_store_backend.model.UsersModel;
 import rs.ac.singidunum.candy_store_backend.repository.IUsersRepository;
 
+import java.sql.SQLOutput;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -49,7 +50,8 @@ public class UsersService implements IUsersService{
             return null;
         }
         else{
-            if (model.getPassword() != user.getPassword()){
+            if (!model.getPassword().equals(user.getPassword())){
+
                 return null;
             }
 
