@@ -32,8 +32,12 @@ export class Products{
     return this.http.get<any>("http://localhost:8080/candies/search/" + search);
   }
 
-  public findInstrumentById(id: string) : Observable<HttpResponse<any>>{
+  public findCandyById(id: string) : Observable<HttpResponse<any>>{
     return this.http.get<any>("http://localhost:8080/candies/candy/" + id);
+  }
+
+  public findAllByCandiesId(id: string) : Observable<HttpResponse<any>> {
+    return this.http.get<any>("http://localhost:8080/comments/all-comments/" + id);
   }
 
   showCandy(id: String): any {

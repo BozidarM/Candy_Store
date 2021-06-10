@@ -9,7 +9,7 @@ export interface Users {
   password: string;
   city: string;
   address: string;
-  birthday: string;
+  birthday: any;
 }
 
 export interface UsersLogin {
@@ -30,5 +30,13 @@ export class UsersService {
 
   public login(model: UsersLogin) : Observable<HttpResponse<any>>{
     return this.http.post<any>("http://localhost:8080/users/login", model);
+  }
+
+  public findByUsername(username: String) : Observable<HttpResponse<any>>{
+    return this.http.get<any>("http://localhost:8080/users/user/" + username);
+  }
+
+  public update(model: Users) : Observable<HttpResponse<any>>{
+    return this.http.post<any>("http://localhost:8080/users/update", model);
   }
 }

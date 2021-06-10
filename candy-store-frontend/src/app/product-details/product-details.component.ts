@@ -14,12 +14,13 @@ export class ProductDetailsComponent implements OnInit {
 
   id: string = "";
   data: any;
-
-  currentRate = 5;
+  comments: any;
+  currentRate: number;
 
   ngOnInit(): void {
     this.route.params.subscribe(value => { this.id = value["id"] });
     this.findCandiesById(this.id);
+    this.findAllCommentsByCandiesId(this.id);
   }
 
   onSubmit(form: NgForm){
@@ -27,7 +28,11 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   public findCandiesById(id: string): any {
-    return this.candiesService.findInstrumentById(id).subscribe(value => { this.data = value; });
+    return this.candiesService.findCandyById(id).subscribe(value => { this.data = value; this.currentRate = this.data.rating});
+  }
+
+  public findAllCommentsByCandiesId(id: string): any {
+    return this.candiesService.findAllByCandiesId(id).subscribe(value => { this.comments = value; } );
   }
 
   addToCart(data: any){

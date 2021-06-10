@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { from } from 'rxjs';
 import { Products } from '../services/products.service.service';
 
@@ -9,12 +10,19 @@ import { Products } from '../services/products.service.service';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor(private productService: Products ) { }
+  constructor(private productService: Products, private router: Router ) { }
 
   data: any;
+  pageOfItems: Array<any>;
+  value: any;
 
   ngOnInit(): void {
     this.findAll();
+  }
+
+  onChangePage(pageOfItems: Array<any>) {
+    // update current page of items
+    this.pageOfItems = pageOfItems;
   }
 
   public findAll(): any {

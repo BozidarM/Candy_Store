@@ -15,7 +15,7 @@
             </mat-icon>
         <!-- </div> -->
         
-        <mat-icon id="cartIcon" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
+        <mat-icon id="cartIcon" matBadge="15" matBadgeColor="accent" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
             shopping_cart
         </mat-icon>
     </div>
@@ -27,23 +27,18 @@
 
             <img src="{{data.image}}" alt="Photo" widht="400px" height="600px">
 
-            <ngb-rating [(rate)]="currentRate" max="5"></ngb-rating>
+            <ngb-rating [(rate)]="currentRate" max="5" readonly="true"></ngb-rating>
 
-            <!-- <div fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
-                <p class="titles">Description: </p>
-                <p id="desc">{{data.description}}</p>
-            </div> -->
         </div>
         <div fxFlex fxLayout="column" fxLayoutAlign="center center" id="details">
-            <!-- <h1>{{data.name}}</h1> -->
             <div fxFlex fxLayout="column" fxLayoutAlign="center center" id="price-box" fxLayoutGap="20px">
                 <div fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
-                    <h2 style="color: #d3325b;">Price:</h2> <h2 style="color: #c8c10d;">{{data.price}} Euro</h2>
+                    <h2 style="color: #d3325b;">Price:</h2> <h2 style="color: #c8c10d;">{{data.price}} €</h2>
                 </div>
                 <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px"
                 #f="ngForm" (ngSubmit)="onSubmit(f)">
                     <mat-form-field  color="accent">
-                        <input type="number" ngModel matInput placeholder="Quantity" name="qunatity" max="{{data.quantity}}" min="1"
+                        <input type="number" ngModel matInput placeholder="Quantity" name="quantity" max="{{data.quantity}}" min="1"
                         required #quantityInput="ngModel">
                         <mat-error *ngIf="quantityInput.hasError('required')">Please Select Quantity First</mat-error>
                         <mat-error *ngIf="quantityInput.value <= 0">You can add minimum 1 item in cart!</mat-error>
@@ -78,8 +73,15 @@
             </div>
         </div>
     </div>
-    <div class="comments-wrapper">
-         <p>komentraisjao;dnfskfnkdslf;dkf;sndfksndplfindsklfnsdkf;lsdnf</p>
+    <div class="comments-wrapper" fxLayout="column" fxLayoutAlign="center center">
+        <h3>Comments:</h3>
+        <div class="comments" *ngFor="let comment of comments" >
+            <div class="comment">
+                <p>Username: {{comment.username}}</p>
+                <p>{{comment.content}}</p>
+                <p>Posted at: {{comment.postedAt}}</p>
+            </div>
+        </div>
     </div>
 </div>
 </div>

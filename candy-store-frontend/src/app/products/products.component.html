@@ -6,25 +6,67 @@
             search #searchInput="ngModel" (keyup) = "search(searchInput)">
         </mat-form-field>
 
-        <mat-icon id="cartIcon" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
+        <mat-icon matBadge="15" matBadgeColor="accent" id="cartIcon" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
             shopping_cart
         </mat-icon>
     </div>
 
+    <div fxLayoutAlign="center center" id="pagination">
+        <jw-pagination color="accent" [items]="data" (changePage)="onChangePage($event)" fxLayoutAlign="center center"></jw-pagination>
+    </div>
+
     <div fxFlex fxLayout="row">
         <div class="sideFilter">
-            <p>...</p>
-            <p>..</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px" >
+                <mat-form-field appearance="fill">
+                    <mat-label>Sort By</mat-label>
+                    <mat-select>
+                        <mat-option value="name-asc">Name ASC</mat-option>
+                        <mat-option value="name-dsc">Name DESC</mat-option>
+                        <mat-option value="price-asc">Price ASC</mat-option>
+                        <mat-option value="price-dsc">Price DESC</mat-option>
+                        <mat-option value="date-asc">Date ASC</mat-option>
+                        <mat-option value="date-dsc">Date DESC</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <div class="check">
+                    <h4>Price: {{value}} €</h4>
+                    <mat-slider color="accent"
+                            thumbLabel
+                            step="0.1"
+                            min="0"
+                            max="50"
+                            [(ngModel)]="value"
+                            aria-label="units"
+                            value>
+                    </mat-slider>
+                </div>
+
+                <div class="check">
+                    <h4>Categories:</h4>
+                    <p><mat-checkbox name="chocolate">Chocolate</mat-checkbox></p>
+                    <p><mat-checkbox name="jelly">Jelly</mat-checkbox></p>
+                    <p><mat-checkbox name="gummy">Gummy</mat-checkbox></p>
+                    <p><mat-checkbox name="gummy">Gum</mat-checkbox></p>
+                    <p><mat-checkbox name="marshmallow">Marshmallow</mat-checkbox></p>
+                </div>
+
+                <div class="check">
+                    <h4>Ratings:</h4>
+                    <p><mat-checkbox name="1">1</mat-checkbox></p>
+                    <p><mat-checkbox name="2">2</mat-checkbox></p>
+                    <p><mat-checkbox name="3">3</mat-checkbox></p>
+                    <p><mat-checkbox name="4">4</mat-checkbox></p>
+                    <p><mat-checkbox name="5">5</mat-checkbox></p>
+                </div>
+            
+            </div>
         </div>
 
-        <div class="main" fxFlex fxLayout="column" fxLayoutAlign="center center">
-            <section fxFlex fxLayout="row wrap" fxLayoutAlign="center" id="main_section">
-                <mat-card fxFlex="500px" *ngFor="let candy of data">
+        <div class="main" fxFlex fxLayout="column" fxLayoutAlign="center center"  >
+            <section fxFlex fxLayout="row wrap" fxLayoutAlign="space-around center" id="main_section" >
+                <mat-card fxFlex="400px" *ngFor="let candy of pageOfItems">
                     <img mat-card-image src="{{candy.image}}" alt="Photo" width="200px" height="400px">
 
                     <mat-card-title fxLayoutAlign="center">
@@ -32,7 +74,7 @@
                     </mat-card-title>
 
                     <mat-card-content fxLayoutAlign="center">
-                    <h3>Price: {{candy.price}} Euro</h3>
+                    <h3>Price: {{candy.price}} €</h3>
                     </mat-card-content>
 
                     <mat-card-actions fxLayoutAlign="center">
@@ -41,5 +83,8 @@
                 </mat-card>
             </section>
         </div>
+    </div>
+    <div fxLayoutAlign="center center" id="pagination">
+        <jw-pagination [items]="data" (changePage)="onChangePage($event)" fxLayoutAlign="center center"></jw-pagination>
     </div>
 </div>

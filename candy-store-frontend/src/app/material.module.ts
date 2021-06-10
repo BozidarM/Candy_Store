@@ -12,6 +12,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule } from '@angular/material/table';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 @NgModule ({
@@ -28,7 +31,10 @@ import { MatIconModule } from '@angular/material/icon';
         MatGridListModule,
         MatTableModule,
         MatSnackBarModule,
-        MatIconModule
+        MatIconModule,
+        MatBadgeModule,
+        MatSelectModule,
+        MatSliderModule
     ],
     exports: [
         MatButtonModule,
@@ -43,7 +49,10 @@ import { MatIconModule } from '@angular/material/icon';
         MatGridListModule,
         MatTableModule,
         MatSnackBarModule,
-        MatIconModule
+        MatIconModule,
+        MatBadgeModule,
+        MatSelectModule,
+        MatSliderModule
     ]
 })
 

@@ -52,8 +52,13 @@ p{
     box-shadow: 1px 1px #d6d6d6;
 }
 
+form{
+    width: 100%;
+}
+
 mat-form-field{
  width: 60%;
+ font-size: 20px;
 }
 
 button{
@@ -71,7 +76,7 @@ img{
     font-size: 40px;
     color: #e04a78;
     cursor: pointer;
-    padding: 30px;
+    padding: 27px;
     transition: 0.3s;
     border-radius: 100px;
 }
@@ -80,13 +85,13 @@ img{
     background-color: #e04a78;
     border-radius: 100px;
     color: #f3f3f3;
-    padding: 30px;
+    padding: 27px;
     transition: 0.3s;
 }
 
 #cart-div{
     width: 100%;
-    padding: 10px 0px;
+    padding: 15px 0px;
     background-color: #f3f3f3;
 }
 
@@ -102,4 +107,15 @@ img{
 ngb-rating{
     color: #e04a78;
     font-size: 80px;
+}
+
+.comments{
+    width: 90%;
+    padding-bottom: 15px;
+}
+
+.comment{
+    border: 1px solid #d6d6d6;
+    border-radius: 20px;
+    padding: 15px;
 }

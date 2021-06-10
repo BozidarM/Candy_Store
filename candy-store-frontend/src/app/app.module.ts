@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -18,7 +19,9 @@ import { ProfileComponent } from './users/profile/profile.component';
 import { OrdersComponent } from './users/orders/orders.component';
 import { OrdersHistoryComponent } from './users/orders-history/orders-history.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { JwPaginationModule } from 'jw-angular-pagination';
+
+
 
 @NgModule({
   declarations: [
@@ -42,7 +45,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpClientModule,
     FlexLayoutModule,
-    NgbModule
+    NgbModule,
+    JwPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

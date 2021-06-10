@@ -66,10 +66,11 @@ public class UsersService implements IUsersService{
         user.setFullname(model.getFullname());
         user.setEmail(model.getEmail());
         user.setUsername(model.getUsername());
-        user.setPassword(model.getPassword());
+        if ( model.getPassword() != null && model.getPassword() != ""){
+            user.setPassword(model.getPassword());
+        }
         user.setAddress(model.getAddress());
         user.setCity(model.getCity());
-        user.setBirthday(model.getBirthday());
 
         this.usersRepository.save(user);
 
