@@ -17,8 +17,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     if(localStorage.getItem("logedin") == "true"){
-      localStorage.clear();
-      window.location.reload();
+      //localStorage.clear();
     }
   }
 

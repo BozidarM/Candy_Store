@@ -2,6 +2,10 @@ mat-card{
     margin: 15px 5px;
 }
 
+.main{
+    margin-top: 8px;
+}
+
 #search-cart-div{
     width: 100%;
     background-color: #d6d6d6;
@@ -54,5 +58,9 @@ mat-form-field{
 
 mat-slider{
     width: 90%;
+}
+
+#sort{
+    margin-top: 20px;
 }
 

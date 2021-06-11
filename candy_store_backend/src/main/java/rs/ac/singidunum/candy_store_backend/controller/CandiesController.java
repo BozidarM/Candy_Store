@@ -58,4 +58,8 @@ public class CandiesController {
        return candiesService.updateStars(model);
     }
 
+    @PostMapping("update-quantity")
+    @CrossOrigin(origins = "*")
+    public Candies updateQuantity(@RequestBody CandiesModel model) { return candiesService.updateQuantity(model); }
+
 }

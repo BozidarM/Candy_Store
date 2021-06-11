@@ -37,6 +37,8 @@
 mat-table{
     width: 90%;
     border-radius: 20px 50px;
+    height: 70vh;
+    overflow-y: auto;
 }
 
 mat-table img{
@@ -47,3 +49,4 @@ mat-form-field{
     width: 90%;
     font-size: 20px;
 }
+

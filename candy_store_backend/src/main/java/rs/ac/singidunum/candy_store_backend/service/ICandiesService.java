@@ -14,5 +14,5 @@ public interface ICandiesService {
     List<Candies> findAllByDate(LocalDate date);
     List<Candies> findAllByRating(int rating);
     Candies updateStars(CandiesModel model);
-    Candies changeIsActive(CandiesModel model);
+    Candies updateQuantity (CandiesModel model);
 }

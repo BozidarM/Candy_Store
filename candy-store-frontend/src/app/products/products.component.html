@@ -6,21 +6,21 @@
             search #searchInput="ngModel" (keyup) = "search(searchInput)">
         </mat-form-field>
 
-        <mat-icon matBadge="15" matBadgeColor="accent" id="cartIcon" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
+        <mat-icon matBadge="{{cartNumber}}" matBadgeColor="accent" id="cartIcon" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
             shopping_cart
         </mat-icon>
     </div>
 
-    <div fxLayoutAlign="center center" id="pagination">
+    <!-- <div fxLayoutAlign="center center" id="pagination">
         <jw-pagination color="accent" [items]="data" (changePage)="onChangePage($event)" fxLayoutAlign="center center"></jw-pagination>
-    </div>
+    </div> -->
 
     <div fxFlex fxLayout="row">
         <div class="sideFilter">
             <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px" >
-                <mat-form-field appearance="fill">
+                <mat-form-field appearance="fill" id="sort">
                     <mat-label>Sort By</mat-label>
-                    <mat-select>
+                    <mat-select (selectionChange)="onSortChange($event)">
                         <mat-option value="name-asc">Name ASC</mat-option>
                         <mat-option value="name-dsc">Name DESC</mat-option>
                         <mat-option value="price-asc">Price ASC</mat-option>
@@ -32,7 +32,7 @@
 
                 <div class="check">
                     <h4>Price: {{value}} €</h4>
-                    <mat-slider color="accent"
+                    <mat-slider color="accent" (change)="onSortChange($event)"
                             thumbLabel
                             step="0.1"
                             min="0"

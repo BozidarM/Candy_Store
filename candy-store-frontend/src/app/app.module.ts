@@ -13,13 +13,14 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ProductsComponent } from './products/products.component';
-import { CartComponent } from './cart/cart.component';
+import { CartComponent } from './cart-orders/cart/cart.component';
 import { UsersComponent } from './users/users.component';
 import { ProfileComponent } from './users/profile/profile.component';
-import { OrdersComponent } from './users/orders/orders.component';
+import { OrdersComponent } from './cart-orders/orders/orders.component';
 import { OrdersHistoryComponent } from './users/orders-history/orders-history.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { JwPaginationModule } from 'jw-angular-pagination';
+import { CartOrdersComponent } from './cart-orders/cart-orders.component';
 
 
 
@@ -35,7 +36,8 @@ import { JwPaginationModule } from 'jw-angular-pagination';
     ProfileComponent,
     OrdersComponent,
     OrdersHistoryComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CartOrdersComponent
   ],
   imports: [
     BrowserModule,

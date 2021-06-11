@@ -40,6 +40,10 @@ export class Products{
     return this.http.get<any>("http://localhost:8080/comments/all-comments/" + id);
   }
 
+  public updateQuantity(model: Candies) : Observable<HttpResponse<any>>{
+    return this.http.post<any>("http://localhost:8080/candies/update-quantity", model);
+  }
+
   showCandy(id: String): any {
     this.router.navigate(['candies/candy/' + id]);
   }

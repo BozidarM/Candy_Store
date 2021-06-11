@@ -25,12 +25,8 @@ public class Orders {
     private double price;
     @Field("items")
     private List<Object> items;
-    @Field("quantity")
-    private int quantity;
     @Field("orderedAt")
     private LocalDate orderedAt;
     @Field("status")
     private String status;
-    @Field("rating")
-    private int rating;
 }

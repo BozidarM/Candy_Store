@@ -14,8 +14,6 @@ public class OrdersModel {
     private String payment;
     private double price;
     private List<Object> items;
-    private int quantity;
     private LocalDate orderedAt;
     private String status;
-    private int rating;
 }

@@ -54,18 +54,24 @@ public class CandiesService implements ICandiesService {
     }
 
     @Override
-    public Candies changeIsActive(CandiesModel model){
+    public Candies updateQuantity (CandiesModel model){
         Candies candy = candiesRepository.findCandiesById(model.getId());
 
-        if (model.getQuantity() == 0) {
-            candy.setIsActive("No");
-        }
-        else{
-            candy.setIsActive("Yes");
-        }
+        if (candy.getQuantity() < model.getQuantity()){
 
-        this.candiesRepository.save(candy);
+            return null;
 
-        return autoMapperService.map(model, Candies.class);
+        }else {
+            candy.setQuantity(model.getQuantity());
+
+            if (candy.getQuantity() == 0) {
+                candy.setIsActive("No");
+            }
+
+            this.candiesRepository.save(candy);
+
+            return autoMapperService.map(model, Candies.class);
+        }
     }
+
 }
