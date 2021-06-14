@@ -66,6 +66,8 @@ export class CartComponent implements OnInit {
       this.items = this.getItems();
 
       this.total =  this.totalPrice();
+
+      window.location.reload();
     }
   }
 
