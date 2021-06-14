@@ -3,8 +3,9 @@ import { MatTableDataSource } from '@angular/material/table';
 import { NgForm } from '@angular/forms';
 import { Orders, OrdersService } from '../../services/orders.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Products, QuanDeleteCart } from 'src/app/services/products.service.service';
 
-export interface Products {
+export interface ProductsCart {
   id: number,
   image: string;
   name: string;
@@ -23,14 +24,14 @@ export class CartComponent implements OnInit {
   items: any;
   total: number;
 
-  PRODUCT_DATA: Products[] = [ {id: 1, image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/HardCandy.jpg/1200px-HardCandy.jpg", name:"test", quantity:5, price: 50} ];
+  PRODUCT_DATA: ProductsCart[] = [];
 
-  cartSource = new MatTableDataSource<Products>();
+  cartSource = new MatTableDataSource<ProductsCart>();
   displayedColumns = ["id", "image", "name", "quantity", "price", "action"];
 
   cartnumber: number = +localStorage.getItem("cartNumber");
 
-  constructor(private ordersService: OrdersService, private _snackBar: MatSnackBar) { }
+  constructor(private ordersService: OrdersService,private productsService: Products , private _snackBar: MatSnackBar) { }
 
 
   ngOnInit(): void {
@@ -46,22 +47,25 @@ export class CartComponent implements OnInit {
 
   onSubmit(form: NgForm){
     if (localStorage.getItem("logedin") == "true"){
-      var model: Orders = {
-        "username": localStorage.getItem("username"),
-        "payment": form.value.payment,
-        "price": this.total,
-        "items": this.items,
-        "orderedAt": new Date(),
-        "status": "pending"
-      }
-      this.ordersService.insert(model).subscribe(value => { this._snackBar.open("Checkout complete, please go to orders to finish your purchase.","",{duration: 5000}); });
-      for(let i=0; i < localStorage.length; i++){
-        if(localStorage.key(i).includes("product")){
-          console.log("product" + i);
-          localStorage.removeItem("product" + parseInt(localStorage.key(i).substring(7)));
-        }
-      }
+     
+      this.insertOrder(form.value.payment)
+
+      var username = localStorage.getItem("username")
+      var logedIn = localStorage.getItem("logedin")
+
+      localStorage.clear();
+
+      localStorage.setItem("username", username)
+      localStorage.setItem("logedin", logedIn)
       localStorage.setItem("cartNumber", "0")
+
+      // for(let i=0; i < localStorage.length; i++){
+      //   if(localStorage.key(i).includes("product")){
+      //     console.log("product" + parseInt(localStorage.key(i).substring(7)));
+      //     localStorage.removeItem("product" + parseInt(localStorage.key(i).substring(7)));
+      //   }
+      // }
+      // localStorage.setItem("cartNumber", "0")
     }
   }
 
@@ -71,7 +75,14 @@ export class CartComponent implements OnInit {
      
       this.cartnumber = this.cartnumber - 1; 
       localStorage.setItem("cartNumber", ""+this.cartnumber); 
-      localStorage.removeItem("product" + id); 
+      
+      let stringQuantity = JSON.parse(localStorage.getItem("product" + id)).quantity
+      let numberQunatity: number = +stringQuantity; 
+      let stringId = JSON.parse(localStorage.getItem("product" + id)).id;
+
+      this.cartDeleteQuantity(stringId, numberQunatity);
+
+      localStorage.removeItem("product" + id);
 
       this.makeArray();
 
@@ -79,6 +90,27 @@ export class CartComponent implements OnInit {
 
       this.total =  this.totalPrice();
     }
+  }
+
+  public insertOrder(form){
+    var model: Orders = {
+      "username": localStorage.getItem("username"),
+      "payment": form,
+      "price": this.total,
+      "items": this.items,
+      "orderedAt": new Date(),
+      "status": "pending"
+    }
+    this.ordersService.insert(model).subscribe(value => { this._snackBar.open("Checkout complete, please go to orders to finish your purchase.","",{duration: 5000}); });
+  }
+
+  public cartDeleteQuantity(id, quantity){
+    var model: QuanDeleteCart = {
+      "id": id,
+      "quantity": quantity,
+      "isActive": "yes"
+    }
+    this.productsService.cartDeleteQuantity(model).subscribe(value => { this._snackBar.open("Successfuly deleted from cart","",{duration: 3000}); });
   }
 
   totalPrice(){
@@ -95,7 +127,7 @@ export class CartComponent implements OnInit {
     var items = [];
     for(let i=0; i < localStorage.length; i++){
       if(localStorage.key(i).includes("product")){
-        items.push({id: i, 
+        items.push({id: JSON.parse(localStorage.getItem(localStorage.key(i))).id, 
                     image: JSON.parse(localStorage.getItem(localStorage.key(i))).image, 
                     name: JSON.parse(localStorage.getItem(localStorage.key(i))).name, 
                     price: JSON.parse(localStorage.getItem(localStorage.key(i))).price,

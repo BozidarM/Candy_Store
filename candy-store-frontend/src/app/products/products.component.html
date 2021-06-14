@@ -32,7 +32,7 @@
 
                 <div class="check">
                     <h4>Price: {{value}} €</h4>
-                    <mat-slider color="accent" (change)="onSortChange($event)"
+                    <mat-slider color="accent" (change)="onPriceChange($event)"
                             thumbLabel
                             step="0.1"
                             min="0"
@@ -45,20 +45,32 @@
 
                 <div class="check">
                     <h4>Categories:</h4>
-                    <p><mat-checkbox name="chocolate">Chocolate</mat-checkbox></p>
-                    <p><mat-checkbox name="jelly">Jelly</mat-checkbox></p>
-                    <p><mat-checkbox name="gummy">Gummy</mat-checkbox></p>
-                    <p><mat-checkbox name="gummy">Gum</mat-checkbox></p>
-                    <p><mat-checkbox name="marshmallow">Marshmallow</mat-checkbox></p>
+                    <mat-radio-group
+                        class="radio-group"
+                        [(ngModel)]="categories"
+                        (change)="onCategoryChange($event)">
+                        <p><mat-radio-button value="all" name="all">All Categories</mat-radio-button></p>
+                        <p><mat-radio-button value="chocolate" name="chocolate">Chocolate</mat-radio-button></p>
+                        <p><mat-radio-button value="jelly" name="jelly">Jelly</mat-radio-button></p>
+                        <p><mat-radio-button value="gummy" name="gummy">Gummy</mat-radio-button></p>
+                        <p><mat-radio-button value="gum" name="gum">Gum</mat-radio-button></p>
+                        <p><mat-radio-button value="marshmallow" name="marshmallow">Marshmallow</mat-radio-button></p>
+                    </mat-radio-group>
                 </div>
 
                 <div class="check">
                     <h4>Ratings:</h4>
-                    <p><mat-checkbox name="1">1</mat-checkbox></p>
-                    <p><mat-checkbox name="2">2</mat-checkbox></p>
-                    <p><mat-checkbox name="3">3</mat-checkbox></p>
-                    <p><mat-checkbox name="4">4</mat-checkbox></p>
-                    <p><mat-checkbox name="5">5</mat-checkbox></p>
+                    <mat-radio-group
+                        class="radio-group"
+                        [(ngModel)]="rating"
+                        (change)="onRatingChange($event)">
+                        <p><mat-radio-button value="all" name="all">All Ratings</mat-radio-button></p>
+                        <p><mat-radio-button value="1" name="1">1</mat-radio-button></p>
+                        <p><mat-radio-button value="2" name="2">2</mat-radio-button></p>
+                        <p><mat-radio-button value="3" name="3">3</mat-radio-button></p>
+                        <p><mat-radio-button value="4" name="4">4</mat-radio-button></p>
+                        <p><mat-radio-button value="5" name="5">5</mat-radio-button></p>
+                    </mat-radio-group>
                 </div>
             
             </div>
@@ -66,7 +78,7 @@
 
         <div class="main" fxFlex fxLayout="column" fxLayoutAlign="center center"  >
             <section fxFlex fxLayout="row wrap" fxLayoutAlign="space-around center" id="main_section" >
-                <mat-card fxFlex="400px" *ngFor="let candy of pageOfItems">
+                <mat-card fxFlex="400px" *ngFor="let candy of data | paginate: {itemsPerPage:10,currentPage:p}">
                     <img mat-card-image src="{{candy.image}}" alt="Photo" width="200px" height="400px">
 
                     <mat-card-title fxLayoutAlign="center">
@@ -85,6 +97,6 @@
         </div>
     </div>
     <div fxLayoutAlign="center center" id="pagination">
-        <jw-pagination [items]="data" (changePage)="onChangePage($event)" fxLayoutAlign="center center"></jw-pagination>
+        <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls>
     </div>
 </div>

@@ -15,4 +15,5 @@ public interface ICandiesService {
     List<Candies> findAllByRating(int rating);
     Candies updateStars(CandiesModel model);
     Candies updateQuantity (CandiesModel model);
+    Candies cartDeleteQuantity (CandiesModel model);
 }

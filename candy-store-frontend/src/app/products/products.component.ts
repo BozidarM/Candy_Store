@@ -15,18 +15,15 @@ export class ProductsComponent implements OnInit {
 
   data: any;
   copyData: any;
-  pageOfItems: Array<any>;
+  p: number = 1;
   value: any;
   cartNumber: string;  
+  rating: any;
+  categories: any;
 
   ngOnInit(): void {
     this.cartNumber =localStorage.getItem("cartNumber");
     this.findAll();
-  }
-
-  onChangePage(pageOfItems: Array<any>) {
-    // update current page of items
-    this.pageOfItems = pageOfItems;
   }
 
   onSortChange(sortType: any){
@@ -35,74 +32,107 @@ export class ProductsComponent implements OnInit {
     if (sortType.value == ""){
       this.findAll();
     }
-
     if (sortType.value == "name-asc"){
       
       this.data = this.data.sort(sortBy("name"));
-      this.pageOfItems = this.data;
-
     }
     if (sortType.value == "name-dsc"){
 
       this.data = this.data.sort(sortBy("-name"));
-      this.pageOfItems = this.data;
-
     }
     if (sortType.value == "price-asc"){
 
       this.data = this.data.sort(sortBy("price"));
-      this.pageOfItems = this.data;
-  
     }
     if (sortType.value == "price-dsc"){
 
       this.data = this.data.sort(sortBy("-price"));
-      this.pageOfItems = this.data;
-
     }
     if (sortType.value == "date-asc"){
 
       this.data = this.data.sort(sortBy("dateCreated"));
-      this.pageOfItems = this.data;
-   
     }
     if (sortType.value == "date-dsc"){
 
-      this.data = this.data.sort(sortBy("-dateCreated"));
-      this.pageOfItems = this.data;
- 
+      this.data = this.data.sort(sortBy("-dateCreated")); 
     }
+    
+  }
 
-    // PRICE RANGE
-    if (this.value > 0){
-      var array = this.data;
-      var priceValue = this.value;
-      var arrayCopy = this.copyData;
+  onPriceChange(value: any){
 
-      //console.log(arrayCopy)
-      
-      arrayCopy.forEach(function (candy) {
-         console.log(priceValue)
-        
-        if (candy.price <= priceValue){
-            console.log(candy)
-            console.log(array)
-            array.push(candy);
-         }
-      }); 
+    if (value.value > 0){
 
-      this.data = [];
-      this.data = array;
+      this.data = this.copyData.filter(function(product){
+        return product.price <= value.value;
+      })
 
-    }else if(this.value == 0){
+    }else if(value.value == 0){
       this.findAll();
     }
+  }
 
-    //CATEGORY
-    console.log(sortType.value)
+  onCategoryChange(category: any){
 
-    //RATING
-    
+    if( category.value == "chocolate"){
+      this.data = this.copyData.filter(function(product){
+        return product.category === 'Chocolate'
+      })
+    }
+    if( category.value == "jelly"){
+      this.data = this.copyData.filter(function(product){
+        return product.category === 'Jelly'
+      })
+    }
+    if( category.value == "gummy"){
+      this.data = this.copyData.filter(function(product){
+        return product.category === 'Gummy'
+      })
+    }
+    if( category.value == "gum"){
+      this.data = this.copyData.filter(function(product){
+        return product.category === 'Gum'
+      })
+    }
+    if( category.value == "marshmallow"){
+      this.data = this.copyData.filter(function(product){
+        return product.category === 'Marshmallow'
+      })
+    }
+    if(category.value == "all"){
+      this.findAll()
+    }
+  }
+
+  onRatingChange(rating: any){
+    if( rating.value == "1"){
+      this.data = this.copyData.filter(function(product){
+        return product.rating === 1;
+      })
+    }
+    if( rating.value == "2"){
+      this.data = this.copyData.filter(function(product){
+        return product.rating === 2;
+      })
+    }
+    if( rating.value == "3"){
+      this.data = this.copyData.filter(function(product){
+        return product.rating === 3;
+      })
+    }
+    if( rating.value == "4"){
+      this.data = this.copyData.filter(function(product){
+        return product.rating === 4;
+      })
+    }
+    if( rating.value == "5"){
+      this.data = this.copyData.filter(function(product){
+        return product.rating === 5;
+      })
+    }
+    if( rating.value == "all"){
+      this.findAll()
+    }
   }
 
   public findAll(): any {

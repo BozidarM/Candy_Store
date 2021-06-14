@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 import { UsersLogin, UsersService } from 'src/app/services/users.service';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
   selector: 'app-login',
@@ -13,11 +14,12 @@ export class LoginComponent implements OnInit {
   message: any;
   errorMessage: String;
 
-  constructor(private users_s: UsersService, private router: Router) { }
+  constructor(private users_s: UsersService, private router: Router, private authenticationService: AuthenticationService) { }
 
   ngOnInit(): void {
     if(localStorage.getItem("logedin") == "true"){
-      //localStorage.clear();
+      this.authenticationService.logOut();
+      localStorage.clear();
     }
   }
 
@@ -33,6 +35,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("username", this.message.username.toString());
         localStorage.setItem("logedin", "true");
         localStorage.setItem("cartNumber", "0");
+        this.authenticationService.logIn();
         this.router.navigate(['/']);
       }
     })

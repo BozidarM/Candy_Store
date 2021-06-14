@@ -11,6 +11,11 @@ export interface Orders {
   status: any;
 }
 
+export interface OrdersStatus {
+  id: any;
+  status: any;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -22,9 +27,18 @@ export class OrdersService {
     return this.http.get<any>("http://localhost:8080/orders/all/" + username);
   }
 
+  public findAllOrdersHistoryByUsername(username: String) : Observable<HttpResponse<any>>{
+    return this.http.get<any>("http://localhost:8080/orders/all-history/" + username);
+  }
+
   public insert(model: Orders) : Observable<HttpResponse<any>>{
       return this.http.post<any>("http://localhost:8080/orders/insert", model);
   }
+
+  public changeStatus(model: OrdersStatus) : Observable<HttpResponse<any>>{
+    return this.http.post<any>("http://localhost:8080/orders/change-status", model);
+}
+
 
   public deleteById(id: String) : Observable<HttpResponse<any>>{
     return this.http.delete<any>("http://localhost:8080/orders/delete/" + id);

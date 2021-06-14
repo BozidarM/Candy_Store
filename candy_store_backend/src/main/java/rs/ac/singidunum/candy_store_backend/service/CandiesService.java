@@ -41,9 +41,11 @@ public class CandiesService implements ICandiesService {
     public Candies updateStars (CandiesModel model){
         Candies candy = candiesRepository.findCandiesById(model.getId());
 
-        candy.setStars(model.getStars());
+        candy.getStars().add(model.getRating());
 
-        double average = model.getStars().stream().mapToInt(val -> val).average().orElse(0.0);
+        this.candiesRepository.save(candy);
+
+        double average = candy.getStars().stream().mapToInt(val -> val).average().orElse(0.0);
         int intValue = (int) average;
 
         candy.setRating(intValue);
@@ -72,6 +74,20 @@ public class CandiesService implements ICandiesService {
 
             return autoMapperService.map(model, Candies.class);
         }
+    }
+
+    @Override
+    public Candies cartDeleteQuantity (CandiesModel model){
+        Candies candy = candiesRepository.findCandiesById(model.getId());
+
+        candy.setIsActive(model.getIsActive());
+        candy.setQuantity(candy.getQuantity() + model.getQuantity());
+
+        System.out.println("Baza: " + candy.getQuantity() + "Model: " + model.getQuantity());
+
+        this.candiesRepository.save(candy);
+
+        return autoMapperService.map(model, Candies.class);
     }
 
 }

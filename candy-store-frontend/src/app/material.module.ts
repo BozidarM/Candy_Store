@@ -15,6 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule ({
@@ -34,7 +36,9 @@ import { MatSliderModule } from '@angular/material/slider';
         MatIconModule,
         MatBadgeModule,
         MatSelectModule,
-        MatSliderModule
+        MatSliderModule,
+        MatRadioModule,
+        MatDialogModule
     ],
     exports: [
         MatButtonModule,
@@ -52,7 +56,9 @@ import { MatSliderModule } from '@angular/material/slider';
         MatIconModule,
         MatBadgeModule,
         MatSelectModule,
-        MatSliderModule
+        MatSliderModule,
+        MatRadioModule,
+        MatDialogModule
     ]
 })
 

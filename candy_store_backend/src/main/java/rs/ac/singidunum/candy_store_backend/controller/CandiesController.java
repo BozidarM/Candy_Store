@@ -62,4 +62,8 @@ public class CandiesController {
     @CrossOrigin(origins = "*")
     public Candies updateQuantity(@RequestBody CandiesModel model) { return candiesService.updateQuantity(model); }
 
+    @PostMapping("cart-delete-quantity")
+    @CrossOrigin(origins = "*")
+    public Candies cartDeleteQuantity(@RequestBody CandiesModel model) { return candiesService.cartDeleteQuantity(model); }
+
 }

@@ -64,3 +64,20 @@ mat-slider{
     margin-top: 20px;
 }
 
+pagination-controls{
+    color: #e04a78;
+}
+
+li{
+    background-color: #e04a78;
+}
+
+.my-pagination /deep/ .ngx-pagination{
+    font-size: 20px;
+}
+
+.my-pagination /deep/ .ngx-pagination .current {
+    background: #e04a78;
+    
+}
+

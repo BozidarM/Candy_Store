@@ -43,8 +43,16 @@ export class ProductDetailsComponent implements OnInit {
 
         this.data.quantity = form.value.quantity;
         var cartnumber: number = +localStorage.getItem("cartNumber");
-        localStorage.setItem("product" + cartnumber++,  JSON.stringify(this.data));
-        localStorage.setItem("cartNumber", ""+cartnumber);
+        var incrementCartNumber = cartnumber++;
+
+        if (++incrementCartNumber == parseInt(localStorage.key(parseInt(localStorage.getItem("product" + incrementCartNumber))).substring(7))){
+          
+          localStorage.setItem("cartNumber", ""+incrementCartNumber);
+          localStorage.setItem("product" + ++incrementCartNumber,  JSON.stringify(this.data));
+        }else{
+          localStorage.setItem("product" + incrementCartNumber,  JSON.stringify(this.data));
+          localStorage.setItem("cartNumber", ""+incrementCartNumber);
+        }
 
         this.data.quantity = quantityInDB - form.value.quantity;
 

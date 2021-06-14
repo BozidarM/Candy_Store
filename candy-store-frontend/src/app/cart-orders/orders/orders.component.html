@@ -1,1 +1,63 @@
-<p>orders works!</p>
+<div id="orders" fxLayout="column" fxLayoutAlign="start center">
+    <div id="order" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="10px" *ngFor="let order of orderSource.data">
+        <div id="order-details" fxLayout="row" fxLayoutAlign="space-around center">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <h4>Username:</h4>
+                <p>{{order.username}}</p>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <h4>City:</h4>
+                <p>{{order.city}}</p>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <h4>Address:</h4>
+                <p>{{order.address}}</p>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <h4>Payment:</h4>
+                <p>{{order.payment}}</p>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <h4>Total Price:</h4>
+                <p>{{order.price}} €</p>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <h4>Ordered At:</h4>
+                <p>{{order.orderedAt}}</p>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <h4>Status:</h4>
+                <p>{{order.status}}</p>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px">
+                <button mat-raised-button (click)="completeOrder(order.id)" color="accent">Finish</button>
+                <button mat-raised-button (click)="cancelOrder(order.id, order.items)" color="warn">Cancel</button>
+            </div>
+        </div>
+      
+        <div id="order-items" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px">
+            <h4>Items:</h4>
+            <div id="table-div" fxLayoutAlign = "center center">
+                <mat-table [dataSource]="order.items" matSort>
+                    <ng-container matColumnDef="image">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header>Image</mat-header-cell>
+                        <mat-cell *matCellDef="let element"><img src="{{ element.image }}" width="80px" height="80px"></mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="name">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+                        <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="quantity">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header>Quantity</mat-header-cell>
+                        <mat-cell *matCellDef="let element">{{ element.quantity }}</mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="price">
+                        <mat-header-cell *matHeaderCellDef mat-sort-header>Price</mat-header-cell>
+                        <mat-cell *matCellDef="let element">{{ element.price }}</mat-cell>
+                    </ng-container>
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let rows; columns: displayedColumns;"></mat-row>
+                </mat-table>
+            </div>
+    </div>
+</div>

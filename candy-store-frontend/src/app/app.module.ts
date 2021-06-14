@@ -21,6 +21,14 @@ import { OrdersHistoryComponent } from './users/orders-history/orders-history.co
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { JwPaginationModule } from 'jw-angular-pagination';
 import { CartOrdersComponent } from './cart-orders/cart-orders.component';
+import { UsersService } from './services/users.service';
+import { Products } from './services/products.service.service';
+import { OrdersService } from './services/orders.service';
+import { AuthenticationService } from './services/authentication.service';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { Ng2OrderModule } from 'ng2-order-pipe';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { RateCommentComponent } from './users/rate-comment/rate-comment.component';
 
 
 
@@ -37,7 +45,8 @@ import { CartOrdersComponent } from './cart-orders/cart-orders.component';
     OrdersComponent,
     OrdersHistoryComponent,
     ProductDetailsComponent,
-    CartOrdersComponent
+    CartOrdersComponent,
+    RateCommentComponent
   ],
   imports: [
     BrowserModule,
@@ -48,9 +57,10 @@ import { CartOrdersComponent } from './cart-orders/cart-orders.component';
     HttpClientModule,
     FlexLayoutModule,
     NgbModule,
-    JwPaginationModule
+    NgxPaginationModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [UsersService, Products, OrdersService, AuthenticationService],
+  bootstrap: [AppComponent],
+  entryComponents: [RateCommentComponent]
 })
 export class AppModule { }

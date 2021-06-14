@@ -6,7 +6,8 @@ import rs.ac.singidunum.candy_store_backend.model.OrdersModel;
 import java.util.List;
 
 public interface IOrdersService {
-    List<Orders> findAllByUsername(String username);
+    List<Orders> findAllPendingOrdersByUsername(String username);
+    List<Orders> findAllHistoryOrdersByUsername(String username);
     void deleteById(String id);
     Orders insert(OrdersModel model);
     Orders update(OrdersModel model);

@@ -17,13 +17,21 @@ public class OrdersController {
 
     @GetMapping("all/{username}")
     @CrossOrigin(origins = "*")
-    public List<Orders> findAllByUsername(@PathVariable("username") String username){ return ordersService.findAllByUsername(username); }
+    public List<Orders> findAllPendingOrdersByUsername(@PathVariable("username") String username){ return ordersService.findAllPendingOrdersByUsername(username); }
+
+    @GetMapping("all-history/{username}")
+    @CrossOrigin(origins = "*")
+    public List<Orders> findAllHistoryOrdersByUsername(@PathVariable("username") String username){ return ordersService.findAllHistoryOrdersByUsername(username); }
 
     @PostMapping("insert")
     @CrossOrigin(origins = "*")
     public Orders insert(@RequestBody OrdersModel model){
         return ordersService.insert(model);
     }
+
+    @PostMapping("change-status")
+    @CrossOrigin(origins = "*")
+    public Orders changeStatus(@RequestBody OrdersModel model) { return ordersService.changeStatus(model); }
 
     @DeleteMapping("delete/{id}")
     @CrossOrigin(origins = "*")

@@ -23,8 +23,13 @@ public class OrdersService implements IOrdersService{
     private IUsersRepository usersRepository;
 
     @Override
-    public List<Orders> findAllByUsername(String username){
-        return ordersRepository.findAllByUsername(username);
+    public List<Orders> findAllPendingOrdersByUsername(String username){
+        return ordersRepository.findAllPendingOrdersByUsername(username);
+    }
+
+    @Override
+    public List<Orders> findAllHistoryOrdersByUsername(String username){
+        return ordersRepository.findAllHistoryOrdersByUsername(username);
     }
 
     @Override

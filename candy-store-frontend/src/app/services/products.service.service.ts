@@ -18,6 +18,24 @@ export interface Candies {
   quantity: number;
 }
 
+export interface QuanDeleteCart {
+  id: string;
+  quantity: number;
+  isActive: string;
+}
+
+export interface UpdatingStars {
+  id: string;
+  rating: number;
+}
+
+export interface Comment {
+  candiesId: string;
+  username: string;
+  content: string;
+  postedAt: Date;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -40,8 +58,20 @@ export class Products{
     return this.http.get<any>("http://localhost:8080/comments/all-comments/" + id);
   }
 
+  public insertComment(model: Comment) :  Observable<HttpResponse<any>>{
+    return this.http.post<any>("http://localhost:8080/comments/insert", model)
+  }
+
   public updateQuantity(model: Candies) : Observable<HttpResponse<any>>{
     return this.http.post<any>("http://localhost:8080/candies/update-quantity", model);
+  }
+
+  public cartDeleteQuantity(model: QuanDeleteCart) : Observable<HttpResponse<any>>{
+    return this.http.post<any>("http://localhost:8080/candies/cart-delete-quantity", model);
+  }
+
+  public updateStars(model: UpdatingStars) :  Observable<HttpResponse<any>>{
+    return this.http.post<any>("http://localhost:8080/candies/update-stars", model);
   }
 
   showCandy(id: String): any {

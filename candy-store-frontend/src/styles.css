@@ -2,27 +2,3 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; scroll-behavior: smooth; }
 
-.pagination .page-item .page-link{
-    color: #e04a78;
-    font-size: 20px;
-}
-
-.page-item.active .page-link {
-    z-index: 0;
-    color: #fff;
-    background-color: #e04a78 !important;
-    border: none;
-}
-
-jw-pagination, dl, ol, ul {
-   margin: 0px !important;
-}
-
-/* .mat-slider-thumb-label{
-    padding: 25px;
-}
-
-.mat-slider-thumb-label-text{
-    font-size: 18px !important;
-}  */
-

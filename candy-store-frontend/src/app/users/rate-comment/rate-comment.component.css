@@ -1,0 +1,22 @@
+ngb-rating{
+    color: #e04a78;
+    font-size: 80px;
+}
+
+mat-card{
+    width: 90%
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+form{
+    width: 90%
+}
+
+button{
+    font-size: 20px;
+    padding: 5px 20px;
+}
+
