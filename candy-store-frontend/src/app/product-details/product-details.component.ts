@@ -18,9 +18,11 @@ export class ProductDetailsComponent implements OnInit {
   comments: any;
   currentRate: number;
   cartNumber: string;  
+  username: string;
 
   ngOnInit(): void {
     this.cartNumber =localStorage.getItem("cartNumber");
+    this.username  = localStorage.getItem("username");
     this.route.params.subscribe(value => { this.id = value["id"] });
     this.findCandiesById(this.id);
     this.findAllCommentsByCandiesId(this.id);
@@ -61,6 +63,8 @@ export class ProductDetailsComponent implements OnInit {
         this._snackBar.open("Successfuly added to cart!","",{duration: 3000});
 
         this.cartNumber =localStorage.getItem("cartNumber");
+
+        this.findCandiesById(this.id);
       }
     }else{
       this.router.navigate(['/login'])

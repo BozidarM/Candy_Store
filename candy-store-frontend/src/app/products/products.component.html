@@ -6,7 +6,7 @@
             search #searchInput="ngModel" (keyup) = "search(searchInput)">
         </mat-form-field>
 
-        <mat-icon matBadge="{{cartNumber}}" matBadgeColor="accent" id="cartIcon" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
+        <mat-icon matBadge="{{cartNumber}}" *ngIf="username != null" matBadgeColor="accent" id="cartIcon" class="material-icons-outlined" fxLayoutAlign="center center" routerLink="/cart">
             shopping_cart
         </mat-icon>
     </div>

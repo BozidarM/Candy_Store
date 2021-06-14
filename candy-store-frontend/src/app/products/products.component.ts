@@ -20,9 +20,11 @@ export class ProductsComponent implements OnInit {
   cartNumber: string;  
   rating: any;
   categories: any;
+  username: string;
 
   ngOnInit(): void {
     this.cartNumber =localStorage.getItem("cartNumber");
+    this.username = localStorage.getItem("username");
     this.findAll();
   }
 
