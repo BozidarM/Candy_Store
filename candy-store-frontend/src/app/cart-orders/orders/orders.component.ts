@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { OrdersService, OrdersStatus } from 'src/app/services/orders.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Products, QuanDeleteCart } from 'src/app/services/products.service.service';
+import { Products } from 'src/app/services/products.service.service';
+import { MatDialog } from '@angular/material/dialog';
+import { UpdateOrderComponent } from '../update-order/update-order.component';
 
 export interface ItemsOrder {
   image: string;
@@ -18,11 +20,12 @@ export interface ItemsOrder {
 })
 export class OrdersComponent implements OnInit {
 
+  dialogOpen: boolean = false;
 
   orderSource: any = new MatTableDataSource<ItemsOrder>();
   displayedColumns = ["image", "name", "quantity", "price"];
 
-  constructor(private ordersService: OrdersService, private productsService: Products, private _snackBar: MatSnackBar) { }
+  constructor(private ordersService: OrdersService, private productsService: Products, private _snackBar: MatSnackBar, private dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.findAllByUsername(localStorage.getItem("username")).subscribe(value => { this.orderSource.data = value; });
@@ -34,21 +37,38 @@ export class OrdersComponent implements OnInit {
 
   completeOrder(id: any){
 
-    this.changeStatusComplete(id).subscribe(value => { this._snackBar.open("Order completed, go to your profile to see and rate this order.","",{duration: 5000}); });
+    this.changeStatusComplete(id).subscribe(value => { this._snackBar.open("Order completed, go to your profile to see and rate this order.","",{duration: 5000});
+                                                       this.findAllByUsername(localStorage.getItem("username")).subscribe(value => { this.orderSource.data = value; }); });
 
   }
 
   cancelOrder(id: any, items:any){
 
-    this.changeStatusCanceled(id).subscribe(value => { this._snackBar.open("Order canceld!","",{duration: 3000}); });
+    this.changeStatusCanceled(id).subscribe(value => { this._snackBar.open("Order canceld!","",{duration: 3000}); 
+                                                       this.findAllByUsername(localStorage.getItem("username")).subscribe(value => { this.orderSource.data = value; });});
 
-    console.log(items)
-
+    var itemArray = [];
     items.forEach(item => {
-      console.log(item.id)
-      console.log(item.quantity)
-      this.cartDeleteQuantity(item.id, item.quantity).subscribe(value => {});
+      itemArray.push({id: item.id, quantity: item.quantity})
+      //this.cartDeleteQuantity(item.id, item.quantity);
     }); 
+
+    this.cancelOrderBackQuantity(itemArray);
+  }
+
+  updateOrder(id: any, city: string, address: string, payment: string){
+    this.dialogOpen = true;
+
+        const orderDialog = this.dialog.open(UpdateOrderComponent, {
+          disableClose: true,
+          width: "60vw",
+          data: { orderId: id, city:city, address:address, payment: payment }
+        });
+
+        orderDialog.afterClosed().subscribe(result => {
+          this.dialogOpen = false;
+          this.findAllByUsername(localStorage.getItem("username")).subscribe(value => { this.orderSource.data = value; });
+        })
   }
 
   public changeStatusComplete(id){
@@ -67,13 +87,8 @@ export class OrdersComponent implements OnInit {
      return this.ordersService.changeStatus(model);
   }
 
-  public cartDeleteQuantity(id, quantity){
-    var model: QuanDeleteCart = {
-      "id": id,
-      "quantity": quantity,
-      "isActive": "yes"
-    }
-    return this.productsService.cartDeleteQuantity(model);
+  public cancelOrderBackQuantity(items: any){
+    this.productsService.cancelOrderBackQuantity(items).subscribe(value => {});
   }
 
 }

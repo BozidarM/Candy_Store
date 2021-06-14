@@ -33,6 +33,10 @@ public class OrdersController {
     @CrossOrigin(origins = "*")
     public Orders changeStatus(@RequestBody OrdersModel model) { return ordersService.changeStatus(model); }
 
+    @PostMapping("update")
+    @CrossOrigin(origins = "*")
+    public Orders update(@RequestBody OrdersModel model) {return ordersService.update(model); }
+
     @DeleteMapping("delete/{id}")
     @CrossOrigin(origins = "*")
     public void deleteById(@PathVariable("id") String id){

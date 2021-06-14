@@ -3,10 +3,12 @@ package rs.ac.singidunum.candy_store_backend.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import rs.ac.singidunum.candy_store_backend.entity.Candies;
+import rs.ac.singidunum.candy_store_backend.model.BackQuantityModel;
 import rs.ac.singidunum.candy_store_backend.model.CandiesModel;
 import rs.ac.singidunum.candy_store_backend.service.CandiesService;
 
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -65,5 +67,9 @@ public class CandiesController {
     @PostMapping("cart-delete-quantity")
     @CrossOrigin(origins = "*")
     public Candies cartDeleteQuantity(@RequestBody CandiesModel model) { return candiesService.cartDeleteQuantity(model); }
+
+    @PostMapping("cancel-order-quantity")
+    @CrossOrigin(origins = "*")
+    public void updateQuantityAfterCancelOrder(@RequestBody List<BackQuantityModel> items){ this.candiesService.updateQuantityAfterCancelOrder(items);}
 
 }

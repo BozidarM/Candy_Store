@@ -44,6 +44,7 @@ mat-table{
     border-radius: 20px 50px;
     height: 30vh;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 mat-table img{

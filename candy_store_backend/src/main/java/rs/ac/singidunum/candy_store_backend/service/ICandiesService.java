@@ -1,9 +1,11 @@
 package rs.ac.singidunum.candy_store_backend.service;
 
 import rs.ac.singidunum.candy_store_backend.entity.Candies;
+import rs.ac.singidunum.candy_store_backend.model.BackQuantityModel;
 import rs.ac.singidunum.candy_store_backend.model.CandiesModel;
 
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
 
 public interface ICandiesService {
@@ -16,4 +18,5 @@ public interface ICandiesService {
     Candies updateStars(CandiesModel model);
     Candies updateQuantity (CandiesModel model);
     Candies cartDeleteQuantity (CandiesModel model);
+    void updateQuantityAfterCancelOrder(List<BackQuantityModel> items);
 }

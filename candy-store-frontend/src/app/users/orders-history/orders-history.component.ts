@@ -29,7 +29,6 @@ export class OrdersHistoryComponent implements OnInit {
   constructor(private ordersService: OrdersService, private productsService: Products, private _snackBar: MatSnackBar, private dialog: MatDialog) { }
 
   ngOnInit(): void {
-    // this.displayedColumnsFunction()
 
     this.findAllOrdersHistoryByUsername(localStorage.getItem("username")).subscribe(value => { this.orderSource.data = value; });
   }
@@ -43,19 +42,20 @@ export class OrdersHistoryComponent implements OnInit {
   }
   
   deleteOrder(id: any){
-    this.deleteById(id).subscribe(value => {  this._snackBar.open("Order deleted from history.","",{duration: 3000}); });
+    this.deleteById(id).subscribe(value => {  this._snackBar.open("Order deleted from history.","",{duration: 3000}); 
+                                              this.findAllOrdersHistoryByUsername(localStorage.getItem("username")).subscribe(value => { this.orderSource.data = value; }); });
   }
 
   rateAndComment(elementId: any, username: string){
     this.dialogOpen = true;
 
-        const profileDialog = this.dialog.open(RateCommentComponent, {
+        const rateDialog = this.dialog.open(RateCommentComponent, {
           disableClose: true,
           width: "60vw",
           data: { candyId: elementId, username:username }
         });
 
-        profileDialog.afterClosed().subscribe(result => {
+        rateDialog.afterClosed().subscribe(result => {
           this.dialogOpen = false;
         })
   }

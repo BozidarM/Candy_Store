@@ -3,12 +3,15 @@ package rs.ac.singidunum.candy_store_backend.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import rs.ac.singidunum.candy_store_backend.entity.Candies;
+import rs.ac.singidunum.candy_store_backend.model.BackQuantityModel;
 import rs.ac.singidunum.candy_store_backend.model.CandiesModel;
 import rs.ac.singidunum.candy_store_backend.repository.ICandiesRepository;
 
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class CandiesService implements ICandiesService {
@@ -80,14 +83,36 @@ public class CandiesService implements ICandiesService {
     public Candies cartDeleteQuantity (CandiesModel model){
         Candies candy = candiesRepository.findCandiesById(model.getId());
 
-        candy.setIsActive(model.getIsActive());
-        candy.setQuantity(candy.getQuantity() + model.getQuantity());
+        int itemsInDb = candy.getQuantity();
+        int itemsInModel = model.getQuantity();
 
-        System.out.println("Baza: " + candy.getQuantity() + "Model: " + model.getQuantity());
+        int totalQunatity = itemsInDb + itemsInModel;
+
+        System.out.println("Baza: " + itemsInDb + "Model: " + itemsInModel);
+
+        candy.setIsActive(model.getIsActive());
+        candy.setQuantity(totalQunatity);
 
         this.candiesRepository.save(candy);
 
         return autoMapperService.map(model, Candies.class);
     }
 
+    public void updateQuantityAfterCancelOrder(List<BackQuantityModel> items){
+
+        for (BackQuantityModel item : items){
+
+            Candies candy = candiesRepository.findCandiesById(item.getId());
+
+            int itemsInDb = candy.getQuantity();
+            int itemsInModel = item.getQuantity();
+
+            int totalQunatity = itemsInDb + itemsInModel;
+
+            candy.setIsActive("yes");
+            candy.setQuantity(totalQunatity);
+
+            this.candiesRepository.save(candy);
+        }
+    }
 }

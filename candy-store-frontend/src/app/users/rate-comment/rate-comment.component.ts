@@ -23,7 +23,7 @@ export class RateCommentComponent implements OnInit {
 
     console.log(this.currentRate)
 
-    if(this.currentRate !== NaN){
+    if(!isNaN(this.currentRate)){
       console.log(this.currentRate)
       this.updateStars(this.data.candyId, this.currentRate);
       console.log(this.currentRate)
@@ -33,7 +33,7 @@ export class RateCommentComponent implements OnInit {
       this.insertComment(this.data.candyId, this.data.username, form.value.comment, new Date());
     }
 
-    if(this.currentRate !== NaN || form.value.comment != ""){
+    if(!isNaN(this.currentRate) || form.value.comment != ""){
       this._snackBar.open("Thank you for your feedback!","",{duration: 3000});
     }
   }

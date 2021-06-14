@@ -59,13 +59,13 @@ export class CartComponent implements OnInit {
       localStorage.setItem("logedin", logedIn)
       localStorage.setItem("cartNumber", "0")
 
-      // for(let i=0; i < localStorage.length; i++){
-      //   if(localStorage.key(i).includes("product")){
-      //     console.log("product" + parseInt(localStorage.key(i).substring(7)));
-      //     localStorage.removeItem("product" + parseInt(localStorage.key(i).substring(7)));
-      //   }
-      // }
-      // localStorage.setItem("cartNumber", "0")
+      this.makeArray();
+
+      this.cartSource.data = this.PRODUCT_DATA;
+
+      this.items = this.getItems();
+
+      this.total =  this.totalPrice();
     }
   }
 
@@ -85,6 +85,8 @@ export class CartComponent implements OnInit {
       localStorage.removeItem("product" + id);
 
       this.makeArray();
+
+      this.items = this.getItems();
 
       this.cartSource.data = this.PRODUCT_DATA;
 

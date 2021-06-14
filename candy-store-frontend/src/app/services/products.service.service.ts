@@ -74,6 +74,10 @@ export class Products{
     return this.http.post<any>("http://localhost:8080/candies/update-stars", model);
   }
 
+  public cancelOrderBackQuantity(items: any) :  Observable<HttpResponse<any>>{
+    return this.http.post<any>("http://localhost:8080/candies/cancel-order-quantity", items);
+  }
+
   showCandy(id: String): any {
     this.router.navigate(['candies/candy/' + id]);
   }

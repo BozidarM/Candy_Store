@@ -11,6 +11,13 @@ export interface Orders {
   status: any;
 }
 
+export interface UpdateOrder {
+  id: string;
+  city: string;
+  address:string;
+  payment: string;
+}
+
 export interface OrdersStatus {
   id: any;
   status: any;
@@ -37,8 +44,11 @@ export class OrdersService {
 
   public changeStatus(model: OrdersStatus) : Observable<HttpResponse<any>>{
     return this.http.post<any>("http://localhost:8080/orders/change-status", model);
-}
+  }
 
+  public update(model: UpdateOrder) : Observable<HttpResponse<any>>{
+    return this.http.post<any>("http://localhost:8080/orders/update", model);
+  }
 
   public deleteById(id: String) : Observable<HttpResponse<any>>{
     return this.http.delete<any>("http://localhost:8080/orders/delete/" + id);

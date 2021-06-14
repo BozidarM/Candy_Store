@@ -19,5 +19,5 @@ public class CandiesModel {
     private String isActive;
     private String madeIn;
     private int quantity;
-    private List<Object> comments;
+    private List<BackQuantityModel> listForCancelOrder;
 }

@@ -29,6 +29,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { Ng2OrderModule } from 'ng2-order-pipe';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { RateCommentComponent } from './users/rate-comment/rate-comment.component';
+import { UpdateOrderComponent } from './cart-orders/update-order/update-order.component';
 
 
 
@@ -46,7 +47,8 @@ import { RateCommentComponent } from './users/rate-comment/rate-comment.componen
     OrdersHistoryComponent,
     ProductDetailsComponent,
     CartOrdersComponent,
-    RateCommentComponent
+    RateCommentComponent,
+    UpdateOrderComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +63,6 @@ import { RateCommentComponent } from './users/rate-comment/rate-comment.componen
   ],
   providers: [UsersService, Products, OrdersService, AuthenticationService],
   bootstrap: [AppComponent],
-  entryComponents: [RateCommentComponent]
+  entryComponents: [RateCommentComponent, UpdateOrderComponent]
 })
 export class AppModule { }

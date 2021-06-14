@@ -31,6 +31,7 @@
             </div>
             <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px">
                 <button mat-raised-button (click)="completeOrder(order.id)" color="accent">Finish</button>
+                <button mat-raised-button (click)="updateOrder(order.id, order.city, order.address, order.payment)" color="accent">Update</button>
                 <button mat-raised-button (click)="cancelOrder(order.id, order.items)" color="warn">Cancel</button>
             </div>
         </div>
