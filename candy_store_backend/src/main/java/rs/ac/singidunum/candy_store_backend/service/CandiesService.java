@@ -88,8 +88,6 @@ public class CandiesService implements ICandiesService {
 
         int totalQunatity = itemsInDb + itemsInModel;
 
-        System.out.println("Baza: " + itemsInDb + "Model: " + itemsInModel);
-
         candy.setIsActive(model.getIsActive());
         candy.setQuantity(totalQunatity);
 

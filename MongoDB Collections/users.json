@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "60c11fae50b4ae71f6fced5f"
+  },
+  "fullname": "Test Proba1",
+  "email": "test@gmail.com",
+  "useranme": "test",
+  "password": "testtest",
+  "city": "Test1",
+  "address": "Test1",
+  "birthday": "Wed Jul 21 00:00:00 CEST 1999",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Users"
+},{
+  "_id": {
+    "$oid": "60c7c410d475244626b680d0"
+  },
+  "fullname": "Test Test",
+  "email": "test1234@gmail.com",
+  "useranme": "test1",
+  "password": "testtest",
+  "city": "Belgrade",
+  "address": "test34",
+  "birthday": "1999-02-02T23:00:00.000Z",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Users"
+},{
+  "_id": {
+    "$oid": "60c8cfdc3af14e2c9a1b3d7f"
+  },
+  "fullname": "User User",
+  "email": "user@example.com",
+  "useranme": "user",
+  "password": "testtest",
+  "city": "Belgrade",
+  "address": "Ulica 45",
+  "birthday": "1999-07-13T22:00:00.000Z",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Users"
+}]

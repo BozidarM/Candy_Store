@@ -1,0 +1,330 @@
+[{
+  "_id": {
+    "$oid": "60c22fd0f153960dd7896c30"
+  },
+  "candiesId": "60be02d2f153960dd788f2a9",
+  "username": "test",
+  "content": "Ovaj proizvod je jako dobar meni se bas svidja njam njam.",
+  "postedAt": {
+    "$date": "2021-04-11T22:00:00Z"
+  }
+},{
+  "_id": {
+    "$oid": "60c694182e085678ccb389e4"
+  },
+  "candiesId": "60be02d2f153960dd788f2a9",
+  "username": "test",
+  "content": "Ovo je drugi komentar za ovaj proizvod.",
+  "postedAt": {
+    "$date": "2021-06-12T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c69a042e085678ccb389e5"
+  },
+  "candiesId": "60be02d2f153960dd788f2a9",
+  "username": "test",
+  "content": "Jako ukusno",
+  "postedAt": {
+    "$date": "2021-06-12T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c770d1bc505c76adb1e3cc"
+  },
+  "candiesId": "60be02d2f153960dd788f2a9",
+  "username": "test",
+  "content": "lepa bombona",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c77128bc505c76adb1e3cd"
+  },
+  "candiesId": "60be02d2f153960dd788f2a9",
+  "username": "test",
+  "content": "lepa bombona",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c0a7d475244626b680bc"
+  },
+  "candiesId": "60be0963f153960dd788f4ae",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c0b3d475244626b680bd"
+  },
+  "candiesId": "60be1062f153960dd788f6d7",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c0c1d475244626b680be"
+  },
+  "candiesId": "60be0a8ff153960dd788f509",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c0c9d475244626b680bf"
+  },
+  "candiesId": "60be0c7af153960dd788f5a3",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c0d1d475244626b680c0"
+  },
+  "candiesId": "60be06acf153960dd788f3e4",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c0d9d475244626b680c1"
+  },
+  "candiesId": "60be0b0ff153960dd788f537",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c0e8d475244626b680c2"
+  },
+  "candiesId": "60be0fd7f153960dd788f6b0",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c0f0d475244626b680c3"
+  },
+  "candiesId": "60be0499f153960dd788f345",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c0f8d475244626b680c4"
+  },
+  "candiesId": "60be076bf153960dd788f41d",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c101d475244626b680c5"
+  },
+  "candiesId": "60be0f56f153960dd788f68a",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c109d475244626b680c6"
+  },
+  "candiesId": "60be0544f153960dd788f37c",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c116d475244626b680c7"
+  },
+  "candiesId": "60be0e69f153960dd788f63f",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c11ed475244626b680c8"
+  },
+  "candiesId": "60be0d16f153960dd788f5d3",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c129d475244626b680c9"
+  },
+  "candiesId": "60be0d97f153960dd788f5f9",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c131d475244626b680ca"
+  },
+  "candiesId": "60be0bb0f153960dd788f563",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c138d475244626b680cb"
+  },
+  "candiesId": "60be0eecf153960dd788f665",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c13ed475244626b680cc"
+  },
+  "candiesId": "60be089ef153960dd788f476",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c148d475244626b680cd"
+  },
+  "candiesId": "60be0a17f153960dd788f4e5",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c14ad475244626b680ce"
+  },
+  "candiesId": "60be0a17f153960dd788f4e5",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c154d475244626b680cf"
+  },
+  "candiesId": "60be0e00f153960dd788f61a",
+  "username": "test",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur arcu nec nisl cursus vulputate. Aenean mollis ultricies nulla, eu consequat arcu facilisis eu. Donec dapibus ac sem eget dapibus. Ut gravida turpis lacus, quis hendrerit dolor aliquam et. Vestibulum ante",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c4f1d475244626b680d2"
+  },
+  "candiesId": "60be06acf153960dd788f3e4",
+  "username": "test1",
+  "content": "TEsttttttt",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c4fcd475244626b680d3"
+  },
+  "candiesId": "60be0544f153960dd788f37c",
+  "username": "test1",
+  "content": "testetstestes",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c833d475244626b680d7"
+  },
+  "candiesId": "60be0544f153960dd788f37c",
+  "username": "user",
+  "content": "testtesttest",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c7c840d475244626b680d8"
+  },
+  "candiesId": "60be0499f153960dd788f345",
+  "username": "user",
+  "content": "testestestsetset",
+  "postedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+},{
+  "_id": {
+    "$oid": "60c8d0a13af14e2c9a1b3d81"
+  },
+  "candiesId": "60be0544f153960dd788f37c",
+  "username": "user",
+  "content": "Test comment",
+  "postedAt": {
+    "$date": "2021-06-14T22:00:00Z"
+  },
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Comments"
+}]

@@ -1,0 +1,426 @@
+[{
+  "_id": {
+    "$oid": "60be02d2f153960dd788f2a9"
+  },
+  "name": "Milk Chocolate Gems",
+  "category": "Chocolate",
+  "price": 19.9,
+  "description": "Gourmet milk chocolate ellipsoids coated with a thin candy shell of distinctive brown! Each piece is about the size of a plain M&M's candy. The inset photo illustrates the comparative size and color of the two candies. There are approximately 390 pieces per pound. Bag contains 2 pounds of Brown Milk Chocolate Gems Candy. Shipping Weight ~ 2.5 lbs.",
+  "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    3
+  ],
+  "rating": 3,
+  "dateCreated": {
+    "$date": "2021-04-11T22:00:00Z"
+  },
+  "isActive": "No",
+  "madeIn": "Serbia",
+  "quantity": 0,
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0499f153960dd788f345"
+  },
+  "name": "Chocolate Sunflower Seeds",
+  "category": "Chocolate",
+  "price": 24.95,
+  "description": "Candy-coated, chocolate-covered sunflower seeds bursting with fabulous flavors...healthy and naturally delicious SUNBURSTS! What are SUNBURSTS? Take an incredibly healthful sunflower kernel; add a layer of fine cocoa, coat it with a colorful candy shell, and you have SUNBURSTS - sunflower seeds reinvented for fun and flavor! Now they are easy to eat, and perfect for that mid-morning snack, or the kids late afternoon sweet tooth. Unique and tastefully stimulating SUNBURSTS are beautiful multi-colored, candy-coated, chocolate cocoa-covered sunflower kernels. Each bag is bursting with color in 6 vibrant hues. SUNBURSTS are abundant in nutrients AND flavor. It is the perfect balance for a new everyday energy snack. Athletes and kids love them. Bag contains 15pound of assorted Chocolate Sunflower Seeds Candy. Shipping Weight ~ 6 lbs. Kosher Certified.",
+  "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    5,
+    5
+  ],
+  "rating": 5,
+  "dateCreated": {
+    "$date": "2021-03-12T23:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 7,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0544f153960dd788f37c"
+  },
+  "name": "Sixlets Mini Milk Chocolate Balls",
+  "category": "Chocolate",
+  "price": 23.8,
+  "description": "Talk about a candy that can multitask! These delicious bite-size chocolate spheres make amazing decorations and toppers for cakes, brownies, and other baked goods. But they also look amazing as part of a colorful candy display. This springtime mix boasts of bright and shimmery blue, yellow, purple, pink, green, and white color coatings around a delicious milk chocolate center. There are approximately 450 pieces per pound. Ball Diameter: 3/8 Inch Bag contains 2 pounds of Spring Colors Sixlets Mini Chocolate Balls Candy. Shipping Weight ~ 2.5 lbs. Kosher Certified.",
+  "image": "https://www.candywarehouse.com/item-images/132264-01_spring-colors-sixlets-mini-chocolate-balls-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    5,
+    4,
+    4,
+    4
+  ],
+  "rating": 4,
+  "dateCreated": {
+    "$date": "2021-06-04T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 1,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be06acf153960dd788f3e4"
+  },
+  "name": "Jelly Belly Beans",
+  "category": "Jelly",
+  "price": 35.2,
+  "description": "You’re not overindulgent. You just like options and a lot of them. So how about 49? We're talking tasty choices like A&W Cream Soda, French Vanilla, Margarita, Peach, Strawberry Cheesecake, and more. Yes, the options are seemingly endless. Just remember to invite some friends over while you’re making executive decisions on behalf of your taste buds since you’ve got a ten-pound case of flavor. 49 Flavor mix includes the 49 official Jelly Belly flavors. A&W Cream Soda, A&W Root Beer, Berry Blue, Blueberry, Bubble Gum, Buttered Popcorn, Cantaloupe, Cappuccino, Caramel Corn, Chocolate Pudding, Cinnamon, Coconut, Cotton Candy, Crushed Pineapple, Dr. Pepper, French Vanilla, Green Apple, Island Punch, Juicy Pear, Kiwi, Lemon Drop, Lemon Lime, Licorice, Mango, Margarita, Mixed Berry Smoothie, Orange Sherbet, Peach, Pina Colada, Plum, Pomegranate, Raspberry, Red Apple, Sizzling Cinnamon, Sour Cherry, Strawberry Cheesecake, Strawberry Daiquiri, Strawberry Jam, Sunkist Lemon, Sunkist Lime, Sunkist Orange, Sunkist Pink Grapefruit, Toasted Marshmallow, Top Banana, Tutti-Fruitti, Very Cherry, Watermelon, and Wild Blackberry! There are approximately 400 pieces per pound. Case contains 10 pounds of Jelly Belly 49 Flavors Jelly Beans Candy.",
+  "image": "https://www.candywarehouse.com/item-images/126778-01_jelly-belly-49-flavors-jelly-beans-10lb-case.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    4,
+    5
+  ],
+  "rating": 4,
+  "dateCreated": {
+    "$date": "2021-05-05T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 12,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be076bf153960dd788f41d"
+  },
+  "name": "Gold Gummy Bears",
+  "category": "Gummy",
+  "price": 19.5,
+  "description": "They're soft. They're chewy. They're translucent. And they're burstin' with beary yummy flavor. There's nothing quite as whimsically delicious as gummi bears, a candy popular the world over for its sprightly personality and fruity taste. Squeeze 'em, line 'em up and make 'em dance, or just plain eat 'em. MMmmm, bears. How many gummy bears in a pound? About 195. Colors - Flavors: Red - Raspberry, Orange - Orange, Yellow - Lemon, Clear - Pineapple, Green - Strawberry. Bear Height: 3/4 Inch. Bag contains 5 pounds of Haribo Gold Bears Gummy Bears Candy.",
+  "image": "https://www.candywarehouse.com/item-images/125865-01_haribo-gold-bears-gummy-bears-candy-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    2
+  ],
+  "rating": 2,
+  "dateCreated": {
+    "$date": "2021-02-20T23:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be089ef153960dd788f476"
+  },
+  "name": "Chocolate Gummy Bears",
+  "category": "Chocolate",
+  "price": 24.75,
+  "description": "These aren’t your average gummy bears. These are gummy bears of the G.I.A. (Gummy Intelligence Agency), a covert organization that specializes in the satisfaction of comestible cravings the world over. They’re delectable double agents, working for both chocolate loyalists and gummy partisans alike, disguising themselves in a thick layer of milk chocolate, but made of soft and fruity gummy that shows their true colors. Their top-secret mission? To tickle your taste buds with sweetness! The only problem is, you’ll have a hard time choosing a side. Assorted Gummy Bear Flavors: Apricot, Cherry, Marshmallow,Orange, Strawberry, Strawberry-Banana Tub contains 2.25 pounds of Milk Chocolate Covered Gummi Bears.",
+  "image": "https://www.candywarehouse.com/item-images/133828-01_albanese-milk-chocolate-covered-gummy-bears-2-25lb-tub.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    4
+  ],
+  "rating": 4,
+  "dateCreated": {
+    "$date": "2021-03-06T23:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0963f153960dd788f4ae"
+  },
+  "name": "Primrose Tiny Candy Hearts",
+  "category": "Jelly",
+  "price": 19.5,
+  "description": "You’re always out-doing yourself for the people you care about. Whether it’s setting the table for an evening meal, or picking the decorations for a wedding reception, anniversary, or Valentine’s Day dinner, you always go the extra mile to make sure everything is perfect. You put a lot of thought into the little touches, like these dainty orange candy hearts that set a cordial tone, and deliver divine citrus flavor in tiny hard candy symbols of your affection. It’s just one more way you pamper those who are lucky enough to know you. Perfect for DIY wedding favors, these tasty candy hearts make great fillers for all shapes and sizes of tins, jars, and containers. There are approximately 1,100 pieces per pound. Heart Width: 1/4 Inch. Bag contains 5 pounds of Orange Tiny Candy Hearts.",
+  "image": "https://www.candywarehouse.com/item-images/126590-01_primrose-tiny-candy-hearts-orange-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    3
+  ],
+  "rating": 3,
+  "dateCreated": {
+    "$date": "2021-05-11T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0a17f153960dd788f4e5"
+  },
+  "name": "Jumbo Marshmallow Twists",
+  "category": "Marshmallow",
+  "price": 12,
+  "description": "Unlike many fly-by-night novelty marshmallows that trade solely on their looks like a sub-par beauty queen, Pink & White Jumbo Marshmallow Twists have a truly superlative mallow taste that will satisfy more than your visual and tactile senses. These puffy pillars of toothsome sugar-cushion deliver the genuine goods when you bite down on them. And with their fun pink spirals and slightly unorthodox elongated cylindrical shape, they don’t slouch in the looks department either. You can almost hear the cheesy emcee sing There She Is. Hot chocolate and mores have never been luckier. Marshmallow Specifications- Dimensions (Inches): 2 3/4 x 1 x 1 Flavor: Strawberry Bag contains 1 kilogram (about 2.2 pounds) of Pink & White Puffy Poles Jumbo Marshmallow Twists Candy... that's about 150 pieces.",
+  "image": "https://www.candywarehouse.com/item-images/130084-01_strawberry-puffy-poles-jumbo-marshmallow-twists-1kg-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    3,
+    3
+  ],
+  "rating": 3,
+  "dateCreated": {
+    "$date": "2021-05-27T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 16,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0a8ff153960dd788f509"
+  },
+  "name": "Petite Pufflettes Gummy Bites",
+  "category": "Gummy",
+  "price": 25.08,
+  "description": "Say hello to the friendliest family around: The Pufflettes! Sweet and gentle, pretty and demure, the Pufflettes are sparkling gummy treats with happy white foundations. Every year, they gather with their close cousins, the Petite Pufflettes, for a sweet family reunion. Smaller and slightly more bashful than their bite-size cousins, the Petite Pufflettes possess the same adorable razzle-dazzle, only in a form that’s easier to grab by the handful. Share them with your own family, and see just how sweet a reunion can be! There are approximately 125 pieces per pound. Puff Dimensions (Inches): 0.5 x 0.75 x 0.75 Bag contains 5 pounds of Lemon Petite Pufflettes Gummy Bites.",
+  "image": "https://www.candywarehouse.com/item-images/132576-01_lemon-petite-pufflettes-gummy-bites-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    3
+  ],
+  "rating": 3,
+  "dateCreated": {
+    "$date": "2021-02-19T23:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0b0ff153960dd788f537"
+  },
+  "name": "Ice Cream Cones Candy",
+  "category": "Jelly",
+  "price": 13.8,
+  "description": "It's a hot summer day at the carnival. You're frantically licking an ice cream cone as waves of the melted good stuff stream down the sugar cone toward your hand! So stressful. This problem has been solved with these tiny hard sweet tart candy ice cream cones! There are approximately 400 pieces per pound. Bag contains 2 pounds of Ice Cream Cones Sweet Tarts Candy.",
+  "image": "https://www.candywarehouse.com/item-images/125927-01_ice-cream-cones-candy-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    4
+  ],
+  "rating": 4,
+  "dateCreated": {
+    "$date": "2021-05-13T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0bb0f153960dd788f563"
+  },
+  "name": "Gummy Cola Bottles",
+  "category": "Gummy",
+  "price": 19.5,
+  "description": "Next time you’re feeling parched, pop open a bottle of refreshing cola -- gummy cola, that is! These soft and sweet classics are colored like half-filled soda bottles, which is fitting, since they’re bursting with real cola taste! Share them with the kids (and any deserving grown-ups) at your next get-together, and savor the sweetness of this smooth soda snack, bottle after bottle. There are approximately 120 pieces per pound. Bottle Height: 1 Inch. Bag contains 5 pounds of Haribo Gummi Happy Cola Bottles Candy.",
+  "image": "https://www.candywarehouse.com/item-images/125859-01_haribo-gummy-cola-bottles-candy-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    4
+  ],
+  "rating": 4,
+  "dateCreated": {
+    "$date": "2021-04-15T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0c7af153960dd788f5a3"
+  },
+  "name": "Sugar Gummy Bears",
+  "category": "Gummy",
+  "price": 17.5,
+  "description": "Pliable and plump, these unique neon gummy bears feature a sweet sugar sanding and an assortment of fruity flavors sure to surprise and delight with every bite! Perfect for wedding favors and candy bar dessert tables alike, these brightly colored gummy bears make an delicious addition to any celebration. Color – Flavor: Pink – Strawberry, Blue – Blueberry, Green – Green Apple, Yellow – Lime, Orange – Orange, Red – Cherry, There are approximately 145 pieces per pound. Bear Height: 3/4 Inch. Bag contains 5 pounds of Neon Sugar Sanded Gummy Bears Candy.",
+  "image": "https://www.candywarehouse.com/item-images/134484-01_neon-sugar-sanded-gummy-bears-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    4
+  ],
+  "rating": 4,
+  "dateCreated": {
+    "$date": "2021-04-30T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0d16f153960dd788f5d3"
+  },
+  "name": "Chocolate Covered Almonds",
+  "category": "Chocolate",
+  "price": 31.8,
+  "description": "Fresh, dry roasted Supreme almonds are surrounded with a thick layer of deluxe milk chocolate! There are approximately 100 pieces per pound. Bag contains 2 pounds of Milk Chocolate Covered Almonds Candy.",
+  "image": "https://www.candywarehouse.com/item-images/126813-01_milk-chocolate-covered-almonds-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    4
+  ],
+  "rating": 4,
+  "dateCreated": {
+    "$date": "2021-03-17T23:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0d97f153960dd788f5f9"
+  },
+  "name": "Chiclets Chewing Gum",
+  "category": "Gum",
+  "price": 9.95,
+  "description": "Delicious chewing gum tabs featuring an assortment of bright colors and a fresh, minty flavor! Jar contains 1.5 pounds of Dubble Bubble Polar Mint Chiclets Chewing Gum Tabs... that's about 500 pieces.",
+  "image": "https://www.candywarehouse.com/item-images/133630-01_dubble-bubble-polar-mint-chiclets-chewing-gum-tabs-1-5lb-jar.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    5
+  ],
+  "rating": 5,
+  "dateCreated": {
+    "$date": "2021-03-21T23:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0e00f153960dd788f61a"
+  },
+  "name": "Watermelon Gummy Bears",
+  "category": "Gummy",
+  "price": 20.5,
+  "description": "Plump and tender pink gummy bears with a juicy watermelon flavor, these bright gummies are sure to surprise and delight with every bite! Designing a candy bar table with a red color theme? These delicious gummi bears in all pink will impress even the most discerning candy connoisseur. There are approximately 145 pieces per pound. Bear Height: 3/4 Inch Bag contains 5 pounds of Watermelon Red Gummy Bears Candy.",
+  "image": "https://www.candywarehouse.com/item-images/134483-01_albanese-watermelon-pink-gummy-bears-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    4
+  ],
+  "rating": 4,
+  "dateCreated": {
+    "$date": "2021-06-06T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0e69f153960dd788f63f"
+  },
+  "name": "Gummy Candy Corn",
+  "category": "Gummy ",
+  "price": 29.5,
+  "description": "Yummy, puffy gummy candy corn. A fun gummy version of the classic yellow, orange, and white mellocreme candy.... perfect for the Halloween party candy dish! There are approximately 50 pieces per pound. Candy Height: 1 Inch Bag contains 2 kilograms (about 4.4 pounds) of Gummy Candy Corn.",
+  "image": "https://www.candywarehouse.com/item-images/127557-01_gummy-candy-corn-2kg-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    3
+  ],
+  "rating": 3,
+  "dateCreated": {
+    "$date": "2021-06-05T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0eecf153960dd788f665"
+  },
+  "name": "Silver and Copper Coins",
+  "category": "Gum ",
+  "price": 5,
+  "description": "A penny for your thoughts and a nickel for your kiss never really seemed like a fair trade. You’re not a material person and of course believe you’re more valuable than a little bit of coinage -- because you are. Now a penny and a nickel filled with bubble gum? That’s something that you can get behind since the sweet taste of gum and the massive bubbles it produces are priceless. So yeah, we’ll be looking for you to share a piece of your mind and send lots of smooches once you get this 100-piece bag of foiled bubble gum coins. Don’t get all shy on us now. Coin Diameter: 1 1/8 Inch. Bag contains 100 Foiled Bubble Gum Candy Coins.",
+  "image": "https://www.candywarehouse.com/item-images/126246-01_silver-and-copper-foiled-bubble-gum-coins-100-piece-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    3
+  ],
+  "rating": 3,
+  "dateCreated": {
+    "$date": "2021-04-24T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0f56f153960dd788f68a"
+  },
+  "name": "Crawlers Gummy Worms",
+  "category": "Gummy",
+  "price": 17.3,
+  "description": "Little worms wiggle their bodies around a garden of green grass and blossoming flowers. These aren't your normal creepers. Your aversion turns to enchantment as you notice their rainbow-like figures. Intrigue melts into hunger as you see they have tiny grains sprinkled all over. You look to the left, then the right, and the left once more. You’re in the clear because no one is around. You grab the crawler, tilt your head back, and drop it gently into your mouth. You’re amazed at the sour and sweet taste. These aren't the critters you were warned not to eat. These are Trolli Sour Brite Crawlers. Don’t keep the new-found snack to yourself. Round them up, and share these delicious gummy invertebrates with friends. There are approximately 110 pieces per pound. Worm Length: 2 Inches. Bag contains 5 pounds of Trolli Sour Brite Crawlers Gummy Worms Candy.",
+  "image": "https://www.candywarehouse.com/item-images/127202-01_trolli-sour-brite-crawlers-gummy-worms-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    4
+  ],
+  "rating": 4,
+  "dateCreated": {
+    "$date": "2021-05-26T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be0fd7f153960dd788f6b0"
+  },
+  "name": "Haribo Gummy Frogs Candy",
+  "category": "Gummy",
+  "price": 16.7,
+  "description": "Frogs. They’re green. Cute. Wiggly. And according to folklore, if you kiss one, it turns into a prince. Which makes these gummy frogs candies a pretty good investment. Each one has a sweet, peach flavor. Their vivid green color stands out in any candy bowl, and they make adorable additions to a kid-themed party. We can’t make any promises about the prince thing. But you might want to dry-clean that ball gown just in case. There are approximately 24 pieces per bag. Frog Length: 1 Inch. Box contains 3.75 pounds of Haribo Gummi Frogs Candy packed in 12 bags, each with a net weight of 5 ounces.",
+  "image": "https://www.candywarehouse.com/item-images/125861-01_haribo-gummy-frogs-candy-3-75lb-box.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    3
+  ],
+  "rating": 3,
+  "dateCreated": {
+    "$date": "2021-05-12T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+},{
+  "_id": {
+    "$oid": "60be1062f153960dd788f6d7"
+  },
+  "name": "Strawberry Candy",
+  "category": "Jelly",
+  "price": 13.5,
+  "description": "The earliest bon bons were most likely created in the 17th century by the Parisian royal court, and the name originated as a child-like play on the French word bon (or good in English). But even as the years roll on, the goodness of the bon bon remains. This sweet strawberry version is an old-fashioned favorite! Delicately crunchy candy shells are filled with a delectable strawberry filling, then bound up in a charming wrapper that resembles the very fruit itself. They’re the treats you used to steal from grandma’s candy dish; the dainty sweets you’d pluck from your neighbor’s dessert bowl. Isn’t it time to add some extra good to yours? There are approximately 68 pieces per pound. Bag contains 5 pounds of Strawberry Bon Bons Candy.",
+  "image": "https://www.candywarehouse.com/item-images/130441-01_strawberry-bon-bons-candy-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+  "stars": [
+    3
+  ],
+  "rating": 3,
+  "dateCreated": {
+    "$date": "2021-06-01T22:00:00Z"
+  },
+  "isActive": "yes",
+  "madeIn": "Serbia",
+  "quantity": 19,
+  "comments": [],
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Candies"
+}]

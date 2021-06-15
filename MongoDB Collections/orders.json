@@ -1,0 +1,670 @@
+[{
+  "_id": {
+    "$oid": "60c4b99e8107c37a3019ff02"
+  },
+  "username": "test",
+  "city": "Test",
+  "address": "adresa32",
+  "payment": "paypal",
+  "price": 93.6,
+  "items": [
+    {
+      "id": "60be0544f153960dd788f37c",
+      "image": "https://www.candywarehouse.com/item-images/132264-01_spring-colors-sixlets-mini-chocolate-balls-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Sixlets Mini Milk Chocolate Balls",
+      "price": 23.8,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 2
+    }
+  ],
+  "orderedAt": {
+    "$date": "2021-06-11T22:00:00Z"
+  },
+  "status": "pending",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Orders"
+},{
+  "_id": {
+    "$oid": "60c4c9b28107c37a3019ff03"
+  },
+  "username": "test",
+  "city": "Test1",
+  "address": "Test1",
+  "payment": "mastercard",
+  "price": 211.6,
+  "items": [
+    {
+      "id": "60be06acf153960dd788f3e4",
+      "image": "https://www.candywarehouse.com/item-images/126778-01_jelly-belly-49-flavors-jelly-beans-10lb-case.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Jelly Belly Beans",
+      "price": 35.2,
+      "quantity": 1
+    },
+    {
+      "id": "60be0544f153960dd788f37c",
+      "image": "https://www.candywarehouse.com/item-images/132264-01_spring-colors-sixlets-mini-chocolate-balls-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Sixlets Mini Milk Chocolate Balls",
+      "price": 23.8,
+      "quantity": 1
+    },
+    {
+      "id": "60be0544f153960dd788f37c",
+      "image": "https://www.candywarehouse.com/item-images/132264-01_spring-colors-sixlets-mini-chocolate-balls-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Sixlets Mini Milk Chocolate Balls",
+      "price": 23.8,
+      "quantity": 2
+    },
+    {
+      "id": "60be06acf153960dd788f3e4",
+      "image": "https://www.candywarehouse.com/item-images/126778-01_jelly-belly-49-flavors-jelly-beans-10lb-case.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Jelly Belly Beans",
+      "price": 35.2,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 2
+    }
+  ],
+  "orderedAt": {
+    "$date": "2021-06-11T22:00:00Z"
+  },
+  "status": "finished",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Orders"
+},{
+  "_id": {
+    "$oid": "60c4d2b98107c37a3019ff04"
+  },
+  "username": "boza",
+  "city": "Test1",
+  "address": "Test1",
+  "payment": "paypal",
+  "price": 398,
+  "items": [
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    }
+  ],
+  "orderedAt": {
+    "$date": "2021-06-11T22:00:00Z"
+  },
+  "status": "pending",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Orders"
+},{
+  "_id": {
+    "$oid": "60c754ff7de93734c34f7ff2"
+  },
+  "username": "test",
+  "city": "Test1111",
+  "address": "Test111",
+  "payment": "visa",
+  "price": 48.75,
+  "items": [
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0544f153960dd788f37c",
+      "image": "https://www.candywarehouse.com/item-images/132264-01_spring-colors-sixlets-mini-chocolate-balls-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Sixlets Mini Milk Chocolate Balls",
+      "price": 23.8,
+      "quantity": 1
+    },
+    {
+      "id": "60be02d2f153960dd788f2a9",
+      "image": "https://www.candywarehouse.com/item-images/125308-01_brown-milk-chocolate-gems-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Milk Chocolate Gems",
+      "price": 19.9,
+      "quantity": 1
+    }
+  ],
+  "orderedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "status": "completed",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Orders"
+},{
+  "_id": {
+    "$oid": "60c7b257d475244626b680b8"
+  },
+  "username": "test",
+  "city": "Test1",
+  "address": "Test1",
+  "payment": "visa",
+  "price": 499,
+  "items": [
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    }
+  ],
+  "orderedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "status": "canceled",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Orders"
+},{
+  "_id": {
+    "$oid": "60c7bff8d475244626b680bb"
+  },
+  "username": "test",
+  "city": "Test1",
+  "address": "Test1",
+  "payment": "visa",
+  "price": 379.83,
+  "items": [
+    {
+      "id": "60be0963f153960dd788f4ae",
+      "image": "https://www.candywarehouse.com/item-images/126590-01_primrose-tiny-candy-hearts-orange-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Primrose Tiny Candy Hearts",
+      "price": 19.5,
+      "quantity": 1
+    },
+    {
+      "id": "60be1062f153960dd788f6d7",
+      "image": "https://www.candywarehouse.com/item-images/130441-01_strawberry-bon-bons-candy-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Strawberry Candy",
+      "price": 13.5,
+      "quantity": 1
+    },
+    {
+      "id": "60be0a8ff153960dd788f509",
+      "image": "https://www.candywarehouse.com/item-images/132576-01_lemon-petite-pufflettes-gummy-bites-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Petite Pufflettes Gummy Bites",
+      "price": 25.08,
+      "quantity": 1
+    },
+    {
+      "id": "60be0c7af153960dd788f5a3",
+      "image": "https://www.candywarehouse.com/item-images/134484-01_neon-sugar-sanded-gummy-bears-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Sugar Gummy Bears",
+      "price": 17.5,
+      "quantity": 1
+    },
+    {
+      "id": "60be06acf153960dd788f3e4",
+      "image": "https://www.candywarehouse.com/item-images/126778-01_jelly-belly-49-flavors-jelly-beans-10lb-case.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Jelly Belly Beans",
+      "price": 35.2,
+      "quantity": 1
+    },
+    {
+      "id": "60be0b0ff153960dd788f537",
+      "image": "https://www.candywarehouse.com/item-images/125927-01_ice-cream-cones-candy-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Ice Cream Cones Candy",
+      "price": 13.8,
+      "quantity": 1
+    },
+    {
+      "id": "60be0fd7f153960dd788f6b0",
+      "image": "https://www.candywarehouse.com/item-images/125861-01_haribo-gummy-frogs-candy-3-75lb-box.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Haribo Gummy Frogs Candy",
+      "price": 16.7,
+      "quantity": 1
+    },
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be076bf153960dd788f41d",
+      "image": "https://www.candywarehouse.com/item-images/125865-01_haribo-gold-bears-gummy-bears-candy-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Gold Gummy Bears",
+      "price": 19.5,
+      "quantity": 1
+    },
+    {
+      "id": "60be0f56f153960dd788f68a",
+      "image": "https://www.candywarehouse.com/item-images/127202-01_trolli-sour-brite-crawlers-gummy-worms-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Crawlers Gummy Worms",
+      "price": 17.3,
+      "quantity": 1
+    },
+    {
+      "id": "60be0544f153960dd788f37c",
+      "image": "https://www.candywarehouse.com/item-images/132264-01_spring-colors-sixlets-mini-chocolate-balls-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Sixlets Mini Milk Chocolate Balls",
+      "price": 23.8,
+      "quantity": 1
+    },
+    {
+      "id": "60be0e69f153960dd788f63f",
+      "image": "https://www.candywarehouse.com/item-images/127557-01_gummy-candy-corn-2kg-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Gummy Candy Corn",
+      "price": 29.5,
+      "quantity": 1
+    },
+    {
+      "id": "60be0d16f153960dd788f5d3",
+      "image": "https://www.candywarehouse.com/item-images/126813-01_milk-chocolate-covered-almonds-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Covered Almonds",
+      "price": 31.8,
+      "quantity": 1
+    },
+    {
+      "id": "60be0d97f153960dd788f5f9",
+      "image": "https://www.candywarehouse.com/item-images/133630-01_dubble-bubble-polar-mint-chiclets-chewing-gum-tabs-1-5lb-jar.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chiclets Chewing Gum",
+      "price": 9.95,
+      "quantity": 1
+    },
+    {
+      "id": "60be0bb0f153960dd788f563",
+      "image": "https://www.candywarehouse.com/item-images/125859-01_haribo-gummy-cola-bottles-candy-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Gummy Cola Bottles",
+      "price": 19.5,
+      "quantity": 1
+    },
+    {
+      "id": "60be0eecf153960dd788f665",
+      "image": "https://www.candywarehouse.com/item-images/126246-01_silver-and-copper-foiled-bubble-gum-coins-100-piece-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Silver and Copper Coins",
+      "price": 5,
+      "quantity": 1
+    },
+    {
+      "id": "60be089ef153960dd788f476",
+      "image": "https://www.candywarehouse.com/item-images/133828-01_albanese-milk-chocolate-covered-gummy-bears-2-25lb-tub.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Gummy Bears",
+      "price": 24.75,
+      "quantity": 1
+    },
+    {
+      "id": "60be0a17f153960dd788f4e5",
+      "image": "https://www.candywarehouse.com/item-images/130084-01_strawberry-puffy-poles-jumbo-marshmallow-twists-1kg-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Jumbo Marshmallow Twists",
+      "price": 12,
+      "quantity": 1
+    },
+    {
+      "id": "60be0e00f153960dd788f61a",
+      "image": "https://www.candywarehouse.com/item-images/134483-01_albanese-watermelon-pink-gummy-bears-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Watermelon Gummy Bears",
+      "price": 20.5,
+      "quantity": 1
+    }
+  ],
+  "orderedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "status": "completed",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Orders"
+},{
+  "_id": {
+    "$oid": "60c7c48fd475244626b680d1"
+  },
+  "username": "test1",
+  "city": "Nis",
+  "address": "test56",
+  "payment": "visa",
+  "price": 223.6,
+  "items": [
+    {
+      "id": "60be06acf153960dd788f3e4",
+      "image": "https://www.candywarehouse.com/item-images/126778-01_jelly-belly-49-flavors-jelly-beans-10lb-case.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Jelly Belly Beans",
+      "price": 35.2,
+      "quantity": 5
+    },
+    {
+      "id": "60be0544f153960dd788f37c",
+      "image": "https://www.candywarehouse.com/item-images/132264-01_spring-colors-sixlets-mini-chocolate-balls-2lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Sixlets Mini Milk Chocolate Balls",
+      "price": 23.8,
+      "quantity": 2
+    }
+  ],
+  "orderedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "status": "completed",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Orders"
+},{
+  "_id": {
+    "$oid": "60c7c524d475244626b680d4"
+  },
+  "username": "test1",
+  "city": "Belgrade",
+  "address": "test34",
+  "payment": "mastercard",
+  "price": 192,
+  "items": [
+    {
+      "id": "60be0a17f153960dd788f4e5",
+      "image": "https://www.candywarehouse.com/item-images/130084-01_strawberry-puffy-poles-jumbo-marshmallow-twists-1kg-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Jumbo Marshmallow Twists",
+      "price": 12,
+      "quantity": 16
+    }
+  ],
+  "orderedAt": {
+    "$date": "2021-06-13T22:00:00Z"
+  },
+  "status": "canceled",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Orders"
+},{
+  "_id": {
+    "$oid": "60c8d0b63af14e2c9a1b3d82"
+  },
+  "username": "user",
+  "city": "Belgrade",
+  "address": "Ulica 45",
+  "payment": "mastercard",
+  "price": 174.65,
+  "items": [
+    {
+      "id": "60be0499f153960dd788f345",
+      "image": "https://www.candywarehouse.com/item-images/125476-01_sunbursts-chocolate-sunflower-seeds-assorted-colors-5lb-bag.jpg?resizeid=104&resizeh=1000&resizew=1000",
+      "name": "Chocolate Sunflower Seeds",
+      "price": 24.95,
+      "quantity": 7
+    }
+  ],
+  "orderedAt": {
+    "$date": "2021-06-14T22:00:00Z"
+  },
+  "status": "canceled",
+  "_class": "rs.ac.singidunum.candy_store_backend.entity.Orders"
+}]
